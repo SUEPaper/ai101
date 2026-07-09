@@ -19,6 +19,7 @@
 - 2026-07-09：配置 GitHub Pages 部署，站点路径使用 `/ai101/`，并新增自动部署工作流。
 - 2026-07-09：新增 `README.md`，补充项目介绍、本地开发、构建、部署和维护说明。
 - 2026-07-09：升级 GitHub Pages 工作流中的 Actions 版本，避免 Node.js 20 运行时弃用警告。
+- 2026-07-09：将 `actions/upload-pages-artifact` 升级到 `v5`，消除其间接调用 `actions/upload-artifact@v4` 带来的 Node.js 20 警告。
 
 ## 进行中
 
@@ -48,3 +49,4 @@
 - 2026-07-09：执行 `pnpm docs:build`，GitHub Pages 子路径配置后构建通过。
 - 2026-07-09：执行 `README.md` 文本检查，确认包含项目介绍、本地开发、构建、部署和维护说明。
 - 2026-07-09：执行 GitHub Actions workflow 文本检查，确认旧 Node.js 20 运行时 Action 版本已替换；本地未运行构建。
+- 2026-07-09：执行 GitHub Actions workflow 文本检查，确认上传 Pages 产物步骤已使用 `actions/upload-pages-artifact@v5`；本地未运行构建。
