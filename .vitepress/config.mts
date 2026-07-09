@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   srcDir: "docs",
+  base: "/ai101/",
   vite: {
     plugins: [tailwindcss()]
   },
