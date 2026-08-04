@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { Content, useData, withBase } from 'vitepress'
 import CourseNav from './CourseNav.vue'
+import DsCourseShell from './ds/DsCourseShell.vue'
 
 const { frontmatter, page } = useData()
 </script>
@@ -27,6 +28,9 @@ const { frontmatter, page } = useData()
           回到首页
         </a>
       </div>
+      <DsCourseShell v-else-if="frontmatter.course === 'data-science'">
+        <Content />
+      </DsCourseShell>
       <article v-else class="vp-doc mx-auto w-full max-w-[860px] px-5 py-12 sm:px-6 md:py-16">
         <Content />
       </article>

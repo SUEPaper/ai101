@@ -23,12 +23,14 @@ AI101 是一个基于 VitePress 的人工智能系列课程静态网站，面向
 ├── docs/                         # 课程内容和首页 Markdown 入口
 │   ├── index.md                  # 首页入口，渲染自定义首页组件
 │   ├── courses/                  # 四门课程页面
+│   ├── decisions/                # 环境与架构决策记录
 │   └── public/                   # 静态资源
 ├── .vitepress/
 │   ├── config.mts                # VitePress 配置
-│   └── theme/                    # 自定义主题、导航和首页组件
+│   └── theme/                    # 自定义主题、导航和首页组件；数据科学组件位于 components/ds
 ├── .github/workflows/deploy.yml  # GitHub Pages 自动部署流程
 ├── ROADMAP.md                    # 当前进度、待办和验证记录
+├── requirements-ds.txt           # 数据科学教程 Python 环境
 └── package.json                  # 本地开发和构建命令
 ```
 
@@ -69,6 +71,30 @@ pnpm docs:build
 ```bash
 pnpm docs:preview
 ```
+
+## 数据科学教程验证
+
+创建 Python 环境并安装课程依赖：
+
+```bash
+python3 -m venv .venv-ds
+source .venv-ds/bin/activate
+python -m pip install -r requirements-ds.txt
+```
+
+检查 27 个预备/讲次页面的结构、内部链接、测验、交互、模块作业和结课项目：
+
+```bash
+pnpm docs:check-content
+```
+
+提取并校验教程中的 Python 代码块：
+
+```bash
+pnpm docs:check-python
+```
+
+代码校验按页面共享命名空间运行；标记为 `tutorial-validation: syntax-only` 的图形或第三方工作流片段只做语法检查。
 
 ## 部署
 
