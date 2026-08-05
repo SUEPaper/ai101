@@ -5,6 +5,9 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   srcDir: "docs",
   base: "/ai101/",
+  markdown: {
+    math: true
+  },
   vite: {
     plugins: [tailwindcss()]
   },

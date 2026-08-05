@@ -35,6 +35,11 @@ import SqlJoinLab from './components/ds/SqlJoinLab.vue'
 import SqlQueryLab from './components/ds/SqlQueryLab.vue'
 import SvdLayersLab from './components/ds/SvdLayersLab.vue'
 import MetricThresholdLab from './components/ds/MetricThresholdLab.vue'
+import MlCourseMap from './components/ml/MlCourseMap.vue'
+import MlLab from './components/ml/MlLab.vue'
+import MlLessonHero from './components/ml/MlLessonHero.vue'
+import MlLessonProgress from './components/ml/MlLessonProgress.vue'
+import MlQuiz from './components/ml/MlQuiz.vue'
 import './style.css'
 
 export default {
@@ -63,6 +68,11 @@ export default {
     app.component('LossComparisonLab', LossComparisonLab)
     app.component('LogisticCurveLab', LogisticCurveLab)
     app.component('MetricThresholdLab', MetricThresholdLab)
+    app.component('MlCourseMap', MlCourseMap)
+    app.component('MlLab', MlLab)
+    app.component('MlLessonHero', MlLessonHero)
+    app.component('MlLessonProgress', MlLessonProgress)
+    app.component('MlQuiz', MlQuiz)
     app.component('PcaProjectionLab', PcaProjectionLab)
     app.component('ProjectionLab', ProjectionLab)
     app.component('QuizBlock', QuizBlock)

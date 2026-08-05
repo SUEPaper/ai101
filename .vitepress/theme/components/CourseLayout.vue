@@ -1,9 +1,26 @@
 <script setup lang="ts">
+import { nextTick, onMounted, watch } from 'vue'
 import { Content, useData, withBase } from 'vitepress'
 import CourseNav from './CourseNav.vue'
 import DsCourseShell from './ds/DsCourseShell.vue'
+import MlCourseShell from './ml/MlCourseShell.vue'
 
 const { frontmatter, page } = useData()
+
+function repairMathJaxViewBox() {
+  if (typeof document === 'undefined') return
+  void nextTick(() => {
+    document.querySelectorAll<SVGSVGElement>('mjx-container svg[viewbox]').forEach((svg) => {
+      const value = svg.getAttribute('viewbox')
+      if (!value) return
+      svg.setAttribute('viewBox', value)
+      svg.removeAttribute('viewbox')
+    })
+  })
+}
+
+onMounted(repairMathJaxViewBox)
+watch(() => page.value.relativePath, repairMathJaxViewBox)
 </script>
 
 <template>
@@ -31,6 +48,9 @@ const { frontmatter, page } = useData()
       <DsCourseShell v-else-if="frontmatter.course === 'data-science'">
         <Content />
       </DsCourseShell>
+      <MlCourseShell v-else-if="frontmatter.course === 'machine-learning'">
+        <Content />
+      </MlCourseShell>
       <article v-else class="vp-doc mx-auto w-full max-w-[860px] px-5 py-12 sm:px-6 md:py-16">
         <Content />
       </article>
