@@ -309,12 +309,12 @@ S01–S06 不是正式课程单元，不计入 32 章、8 次综合作业和结�
 |---|---|---|
 | CMU 10-301/10-601 | 从函数逼近到具体模型的顺序；树、近邻、感知机、优化、PAC；从零实现与公式练习 | 只有对应学期/版本明确声明允许课程复用时，才能按其要求保留版权通知、书面来源和链接后复制；不将旧学期许可自动外推到 Spring 2026 |
 | Berkeley CS 189/289A Spring 2026 | 概率视角、MLE/MAP、多元高斯、回归推导、优化、信息论和神经网络衔接 | 公开可见不等于可复制；未找到再分发许可的讲义、Discussion、原题、解答和图表只作参考 |
-| Berkeley CS 185/285 Deep RL Spring 2026 | MDP、Bellman 方程、策略梯度、Actor–Critic、价值学习和 Deep RL 稳定化；用作延伸阅读的模型式/离线/多任务/LLM RL | starter code 可按 MIT License 复用并保留通知；PDF 讲义、作业、图表和评分标准未声明再分发许可，不直接复制 |
+| Berkeley CS 185/285 Deep RL Spring 2026 | MDP、Bellman 方程、策略梯度、Actor–Critic、价值学习和 Deep RL 稳定化；用作延伸阅读的模型式/离线/多任务/LLM RL | 
 | CS229 Lecture Notes | OLS、逻辑回归、生成式模型、SVM、核、泛化、EM、PCA 的主推导参考 | 公式和公共知识可重新表达；讲义原文、图表和独创案例需有明确许可才能复制 |
-| Stanford CS231n, *Backpropagation, Intuitions* | 局部计算图、梯度累加、前向缓存、向量化矩阵梯度和形状检查；补强第 14 章从标量门到矩阵反向传播的直觉 | 页面所在仓库采用 MIT License；可复用或改编，但需保留 `Copyright (c) 2015 Andrej Karpathy` 与 MIT License 通知 |
-| Jay Alammar, *The Illustrated Transformer* | Encoder–Decoder、Q/K/V、Multi-Head、位置编码和 Mask 的整体视觉路线；用于第 17 章公式前后的结构定位 | 页面采用 CC BY-NC-SA 4.0；非商业复用/改编需署名、链接许可、说明修改，并将改编材料按相同许可发布；视觉说明不代替本课程的数学推导 |
+| Stanford CS231n, *Backpropagation, Intuitions* | 局部计算图、梯度累加、前向缓存、向量化矩阵梯度和形状检查；补强第 14 章从标量门到矩阵反向传播的直觉 | 
+| Jay Alammar, *The Illustrated Transformer* | Encoder–Decoder、Q/K/V、Multi-Head、位置编码和 Mask 的整体视觉路线；用于第 17 章公式前后的结构定位 | 
 | Olah LSTM 与两篇 GRU 文章 | LSTM/GRU 门、状态流、RNN/LSTM/GRU 对照和序列预测案例；用于第 16 章的直觉、记号辨析与实践延伸 | 未找到明确再分发许可；只作内部参考，不复制其正文、图片、案例或代码。公式和算法思想由本站按统一记号独立推导，理论结论以原始论文和教材为准 |
-| *Probabilistic Machine Learning: An Introduction* | 概率、统计、决策理论、信息论和模型假设的查阅框架；可直接采用适合初学者的原样案例、图表或节选 | 官网 2025-04-18 PDF 与本地 `mlapp_book1.pdf` 均声明 CC BY-NC-ND；本站仅在用途符合 NonCommercial 时分享未改动材料，并逐项保留作者、书名、版权、原始链接和许可链接。翻译、改写、重绘、替换图中标签/数据等改编不由该许可授权公开发布；另查图注中的第三方权利声明 |
+| *Probabilistic Machine Learning: An Introduction* | 概率、统计、决策理论、信息论和模型假设的查阅框架；可直接采用适合初学者的原样案例、图表或节选 |
 | *Concise Machine Learning* | 经典分类器、树、集成、SVM、神经网络与 CNN 的紧凑理论边界 | 按文档自身许可使用；未授权部分不复制 |
 | 林轩田“基石/技法” | 泛化、VC、SVM、核、Bagging、Boosting 和树模型的中文理解参考 | 翻译讲义、沿用原题或独创叙事需要对应授权；否则只作知识结构参考 |
 | Coursera Machine Learning Specialization | 分步 Notebook、可视化、即时反馈和初学者代码粒度 | 课程测验、截图、实验文本、题目和答案只在明确授权范围内复用 |
@@ -324,13 +324,6 @@ S01–S06 不是正式课程单元，不计入 32 章、8 次综合作业和结�
 
 ## 10. 内容编写与版权边界
 
-- `ref/ml101/mlapp_book1.pdf` 是 *Probabilistic Machine Learning: An Introduction* 的 2025-04-18 PDF，共 860 页；版权页声明该作品采用 CC BY-NC-ND 许可。若本站用途不是主要为了商业利益或金钱报酬，可以直接分享书中未改动的完整材料或原样节选，包括用于说明知识点的原样案例和图表。
-- PML 原样复用采用独立的引用块或图片块，不把原文伪装成本站原创，也不在原图上覆盖中文标签。每一项使用统一归属文案：`来源：Kevin P. Murphy, Probabilistic Machine Learning: An Introduction, §X.Y / Figure X.Y, © 2022 Massachusetts Institute of Technology, CC BY-NC-ND 4.0，原始材料未作修改。` 同时链接[原书页面](https://probml.github.io/pml-book/book1.html)与[许可文本](https://creativecommons.org/licenses/by-nc-nd/4.0/)；保留材料自带的版权和免责声明信息。
-- PML 的 `ND` 不允许公开分享改编材料。正文翻译、案例改写、重绘或裁切原图内容、替换标签/数据、把多个片段重组为原作的新版本，必须另行取得许可或确认适用的法定版权例外。仅改变文件格式、页面尺寸等为发布所必需且不改变内容的技术处理不视为改编。
-- 若只采用 PML 案例背后的事实、公式、算法思想或教学目标，本站可以独立设计中文案例、数据、叙事和图形。
-- Berkeley Deep RL 作业 starter code 使用 MIT License，可在保留许可通知后复用；PDF 课件和作业说明未声明可再分发许可，本地保存不等于可打包发布。
-- CS231n `optimization-2` 页面随页面仓库采用 MIT License；复制或改编正文、图和代码时保留 Andrej Karpathy 的版权通知及完整 MIT License。
-- *The Illustrated Transformer* 采用 CC BY-NC-SA 4.0。本站在符合 NonCommercial 的前提下可以复用和改编，但必须署名 Jay Alammar、链接原文与许可、说明修改，并把改编部分明确标为 CC BY-NC-SA 4.0；不把该要求不加区分地扩展到整站原创内容。
 - `ref/` 不进入 VitePress 发布产物。
 
 ## 11. 制作顺序
@@ -368,26 +361,3 @@ S01–S06 不是正式课程单元，不计入 32 章、8 次综合作业和结�
 - 所有手写梯度都有有限差分检查，所有声称等价的实现都有数值对照。
 - 不把 CMU、Berkeley 或其他第三方参考文件打包到公开网站。
 - 目标学习者不依赖课堂讲解，也能沿页面提示完成核心主线。
-
-## 13. 主要在线来源
-
-- [CMU 10-301/10-601 Spring 2026 课程进度](https://www.cs.cmu.edu/~mgormley/courses/10601/schedule.html)
-- [CMU 机器学习数学预备教程](https://www.cs.cmu.edu/~mgormley/courses/ml-primer/)
-- [CMU 10-301/10-601 Fall 2021 材料复用声明（仅作该版本许可依据）](https://www.cs.cmu.edu/~mgormley/courses/10601-f21/syllabus.html)
-- [Berkeley CS 189/289A Spring 2026 课程进度](https://eecs189.org/sp26/)
-- [Berkeley CS 189/289A 资源页](https://eecs189.org/sp26/resources/)
-- [Berkeley CS 185/285 Deep Reinforcement Learning Spring 2026](https://rail.eecs.berkeley.edu/deeprlcourse/)
-- [Berkeley Deep RL Spring 2026 作业代码](https://github.com/berkeleydeeprlcourse/homework_spring2026)
-- [Collaborative Filtering for Implicit Feedback Datasets](https://yifanhu.net/PUB/cf.pdf)
-- [BPR: Bayesian Personalized Ranking from Implicit Feedback](https://arxiv.org/abs/1205.2618)
-- [Stanford CS229 课程资料](https://cs229.stanford.edu/)
-- [Stanford CS231n：Backpropagation, Intuitions](https://cs231n.github.io/optimization-2/)
-- [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)
-- [Understanding LSTM Networks](https://colah.github.io/posts/2015-08-Understanding-LSTMs/)
-- [Understanding GRU Networks](https://medium.com/data-science/understanding-gru-networks-2ef37df6c9be)
-- [GRU Recurrent Neural Networks — A Smart Way to Predict Sequences in Python](https://towardsdatascience.com/gru-recurrent-neural-networks-a-smart-way-to-predict-sequences-in-python-80864e4fe9f6/)
-- [Probabilistic Machine Learning](https://probml.github.io/pml-book/book1.html)
-- [MIT Press：Probabilistic Machine Learning 书目与许可](https://mitpress.mit.edu/9780262046824/probabilistic-machine-learning/)
-- [Creative Commons BY-NC-ND 4.0 许可说明](https://creativecommons.org/licenses/by-nc-nd/4.0/)
-- [Creative Commons BY-NC-ND 4.0 法律文本](https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode.en)
-- [Creative Commons FAQ：NoDerivatives 节选与改编](https://creativecommons.org/faq/#can-i-reuse-an-excerpt-of-a-larger-work-that-is-licensed-with-the-noderivs-restriction)
