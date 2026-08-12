@@ -7,6 +7,12 @@
 @source "../../docs";
 
 .ds-course-content {
+  --vp-code-block-bg: #f6f8fa;
+  --vp-code-lang-color: #59636e;
+  --vp-code-copy-code-bg: #ffffff;
+  --vp-code-copy-code-border-color: #d0d7de;
+  --vp-code-copy-code-hover-bg: #eef1f4;
+  --vp-code-copy-code-hover-border-color: #afb8c1;
   color: #2f3d39;
   font-family: Inter, "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 16px;
@@ -62,19 +68,20 @@
 
 .ds-course-content :not(pre) > code {
   padding: .14em .38em;
-  border: 1px solid #d6e1dc;
+  border: 1px solid #d0d7de;
   border-radius: 5px;
-  color: #8e4e2d;
-  background: #f5f7f4;
+  color: #1f2328;
+  background: #eff2f5;
   font-size: .86em;
 }
 
 .ds-course-content div[class*='language-'] {
   margin: 22px 0;
-  border: 1px solid #29463f;
+  border: 1px solid #d0d7de;
   border-radius: 12px;
-  background: #10221f;
-  box-shadow: 0 14px 40px rgba(16,34,31,.1);
+  color: #1f2328;
+  background: #f6f8fa;
+  box-shadow: 0 10px 28px rgba(35,107,99,.08);
 }
 
 .ds-course-content .ds-kicker {
@@ -309,6 +316,12 @@
 
 /* 机器学习教材：可计算的证明草稿纸 */
 .ml-course-content {
+  --vp-code-block-bg: #f6f8fa;
+  --vp-code-lang-color: #59636e;
+  --vp-code-copy-code-bg: #ffffff;
+  --vp-code-copy-code-border-color: #d0d7de;
+  --vp-code-copy-code-hover-bg: #eef1f4;
+  --vp-code-copy-code-hover-border-color: #afb8c1;
   color: #35415e;
   font-family: Inter, "PingFang SC", "Microsoft YaHei", sans-serif;
   font-size: 16px;
@@ -357,8 +370,8 @@
 .ml-course-content li { color: #45516d; }
 .ml-course-content strong { color: #25345c; }
 .ml-course-content a { color: #2c50b5; text-decoration-color: #9cadd9; text-underline-offset: 3px; }
-.ml-course-content :not(pre) > code { padding: .14em .38em; border: 1px solid #d8deed; border-radius: 5px; color: #a33e34; background: #f0f3fa; font-size: .86em; }
-.ml-course-content div[class*='language-'] { margin: 23px 0; border: 1px solid #293960; border-radius: 10px; background: #111a31; box-shadow: 0 14px 36px rgba(23,32,59,.09); }
+.ml-course-content :not(pre) > code { padding: .14em .38em; border: 1px solid #d0d7de; border-radius: 5px; color: #1f2328; background: #eff2f5; font-size: .86em; }
+.ml-course-content div[class*='language-'] { margin: 23px 0; border: 1px solid #d0d7de; border-radius: 10px; color: #1f2328; background: #f6f8fa; box-shadow: 0 10px 28px rgba(44,80,181,.08); }
 .ml-course-content div[class*='language-'] code { font-size: 13px; line-height: 1.72; }
 .ml-course-content mjx-container[display='true'] { margin: 24px 0; padding: 16px 18px; overflow-x: auto; border-left: 3px solid #2d51b8; color: #17203b; background: #eef1f9; text-align: left !important; }
 .ml-course-content mjx-container:not([display='true']) { color: #17203b; }
@@ -450,6 +463,7 @@
   .ml-course-content .ml-proof-map { grid-template-columns: 1fr; }
   .ml-course-content .ml-proof-map > div:not(:last-child)::after { content: '↓'; top: auto; right: 50%; bottom: -13px; }
   .ml-course-content .ml-terms { grid-template-columns: 1fr; }
+  .ml-course-content table { display: block; max-width: 100%; overflow-x: auto; overscroll-behavior-inline: contain; }
   .ml-course-content mjx-container[display='true'] { margin-inline: -8px; padding-inline: 12px; font-size: 92%; }
 }
 

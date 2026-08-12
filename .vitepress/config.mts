@@ -6,7 +6,8 @@ export default defineConfig({
   srcDir: "docs",
   base: "/ai101/",
   markdown: {
-    math: true
+    math: true,
+    theme: "github-light"
   },
   vite: {
     plugins: [tailwindcss()]

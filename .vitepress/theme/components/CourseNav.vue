@@ -8,8 +8,8 @@ const mobileOpen = ref(false)
 const mainCourses = [
   { title: '数据科学', href: '/courses/data-science' },
   { title: '机器学习', href: '/courses/machine-learning' },
-  { title: '深度学习', href: '/courses/deep-learning' },
-  { title: '机器学习实践课', href: '/courses/machine-learning-practice' }
+  { title: '深度学习与大模型', href: '/courses/deep-learning' },
+  { title: '人工智能实践课', href: '/courses/machine-learning-practice' }
 ]
 
 const allCourses = [
@@ -39,9 +39,13 @@ watch(
         class="group flex min-h-11 shrink-0 items-center gap-3 text-[#0d1514] no-underline focus-visible:rounded-lg focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#2f7c7a]"
         :href="withBase('/')"
       >
-        <span class="grid h-11 w-11 place-items-center rounded-lg bg-[#0d1514] text-[13px] font-[820] text-[#f3c56f] transition group-hover:bg-[#193431]">
-          智
-        </span>
+        <img
+          class="h-11 w-11 rounded-full border border-[#dbe5df] bg-white object-contain shadow-[0_6px_18px_rgba(13,21,20,0.1)]"
+          :src="withBase('/images/logo.svg')"
+          alt=""
+          width="44"
+          height="44"
+        >
         <span class="leading-none">
           <span class="block text-base font-[820]">人工智能 101</span>
           <span class="mt-1 hidden text-[11px] font-semibold text-[#687773] sm:block">人工智能课程系列</span>
@@ -53,12 +57,12 @@ watch(
           <a
             v-for="course in mainCourses"
             :key="course.href"
-            class="group/nav relative flex min-h-[64px] w-[140px] flex-col justify-center rounded-lg px-3 text-center text-[#32413d] no-underline transition hover:bg-white/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2f7c7a]"
+            class="group/nav relative flex min-h-[64px] min-w-[120px] flex-col justify-center rounded-lg px-4 text-center text-[#32413d] no-underline transition hover:bg-white/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2f7c7a]"
             :class="isActive(course.href) ? 'text-[#0d1514]' : ''"
             :href="withBase(course.href)"
             :aria-current="isActive(course.href) ? 'page' : undefined"
           >
-            <span class="block text-[15px] font-bold leading-none">{{ course.title }}</span>
+            <span class="block whitespace-nowrap text-[15px] font-bold leading-none">{{ course.title }}</span>
             <span
               class="absolute inset-x-3 bottom-2 h-0.5 rounded-full transition"
               :class="isActive(course.href) ? 'bg-[#143b37]' : 'bg-transparent group-hover/nav:bg-[#dbe5df]'"
