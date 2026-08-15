@@ -38,14 +38,14 @@ const courses = [
     number: '03',
     phase: '表示、生成与规模化',
     title: '深度学习与大模型',
-    status: '规划中',
-    available: false,
+    status: '已开放',
+    available: true,
     href: '/courses/deep-learning',
     routeDescription: '在神经网络基础上进入现代架构、生成模型与 LLM。',
-    summary: '计划系统展开现代架构变体、大规模训练、自监督学习、生成模型和大语言模型；具体大纲、课时与章节仍待确认。',
-    highlights: ['现代深度架构', '自监督与生成模型', '大语言模型'],
-    outcome: '计划形成从训练机制到大模型应用边界的系统理解。',
-    action: '查看当前课程规划',
+    summary: '沿 32 章完整路线，从 AdamW、ResNet、检测与分割进入生成模型、LLM、GPU 算子、分布式训练和推理服务。',
+    highlights: ['32 章 · 64 个交互', '8 次作业 + 项目', 'GPU 与 AI Infra'],
+    outcome: '形成从训练机制、模型能力到大模型系统性能、成本与应用边界的系统理解。',
+    action: '进入深度学习与大模型课程',
     accentClass: 'text-[#93483f]',
     borderClass: 'border-l-[#9b4d42]',
     dotClass: 'bg-[#9b4d42]'
@@ -85,7 +85,7 @@ const plannedCourses = courses.filter((course) => !course.available)
       <div class="relative mx-auto grid w-full max-w-[1180px] gap-12 px-5 py-14 sm:px-6 md:py-20 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:gap-16 lg:py-24">
         <div>
           <p class="mb-5 inline-flex rounded-full border border-[#cbd9d2] bg-white/80 px-3 py-1 text-xs font-bold text-[#2f7c7a]">
-            2 门已开放 · 2 门规划中
+            3 门已开放 · 1 门规划中
           </p>
           <h1 id="ai-home-title" class="m-0 max-w-[650px] text-[44px] font-[840] leading-[1.04] tracking-[-0.035em] text-[#0d1514] md:text-[64px]">
             从可信数据，<br>
@@ -165,10 +165,10 @@ const plannedCourses = courses.filter((course) => !course.available)
         <div class="max-w-[760px]">
           <p class="m-0 font-mono text-[11px] font-bold tracking-[0.16em] text-[#2f7c7a]">OPEN FOR STUDY</p>
           <h2 id="open-courses-title" class="mb-0 mt-3 text-[32px] font-[830] leading-[1.12] tracking-[-0.02em] text-[#0d1514] md:text-[44px]">现在可以完整学习</h2>
-          <p class="mb-0 mt-4 text-base leading-[1.8] text-[#5b6864]">两套课程已完成正文、实验、练习和项目建设，当前进入试学反馈驱动的维护阶段。</p>
+          <p class="mb-0 mt-4 text-base leading-[1.8] text-[#5b6864]">三套课程已完成正文、实验、练习和项目建设，当前进入试学反馈驱动的维护阶段。</p>
         </div>
 
-        <div class="mt-10 grid gap-5 lg:grid-cols-2">
+        <div class="mt-10 grid gap-5 lg:grid-cols-3">
           <a
             v-for="course in openCourses"
             :key="course.href"
@@ -204,14 +204,14 @@ const plannedCourses = courses.filter((course) => !course.available)
         <div class="grid gap-6 lg:grid-cols-[0.72fr_1.28fr] lg:items-end">
           <div>
             <p class="m-0 font-mono text-[11px] font-bold tracking-[0.16em] text-[#687773]">NEXT ON THE ROUTE</p>
-            <h2 id="planned-courses-title" class="mb-0 mt-3 text-[32px] font-[830] leading-[1.12] tracking-[-0.02em] text-[#0d1514] md:text-[44px]">下一阶段建设</h2>
+            <h2 id="planned-courses-title" class="mb-0 mt-3 text-[32px] font-[830] leading-[1.12] tracking-[-0.02em] text-[#0d1514] md:text-[44px]">后续课程规划</h2>
           </div>
           <p class="m-0 max-w-[700px] text-base leading-[1.8] text-[#5b6864] lg:justify-self-end">
-            两门后续课的能力边界已经明确，但具体大纲、课时和每节内容仍待确认。这里展示的是建设方向，不把规划误标成已完成课程。
+            数据科学、机器学习、深度学习与大模型均已开放；人工智能实践课仍处于规划阶段。这里继续区分规划和已开放，不把课程目录误标成完整课程。
           </p>
         </div>
 
-        <div class="mt-10 grid gap-5 md:grid-cols-2">
+        <div class="mt-10 grid max-w-[580px] gap-5">
           <a
             v-for="course in plannedCourses"
             :key="course.href"
@@ -221,7 +221,7 @@ const plannedCourses = courses.filter((course) => !course.available)
           >
             <span class="flex flex-wrap items-center justify-between gap-3">
               <span class="font-mono text-xs font-bold tracking-[0.12em]" :class="course.accentClass">COURSE {{ course.number }}</span>
-              <span class="rounded-full border border-[#d7d9d6] bg-white/75 px-2.5 py-1 text-[11px] font-bold text-[#66706c]">规划中</span>
+              <span class="rounded-full border border-[#d7d9d6] bg-white/75 px-2.5 py-1 text-[11px] font-bold text-[#66706c]">{{ course.status }}</span>
             </span>
             <h3 class="mb-0 mt-5 text-2xl font-[820] leading-tight text-[#17201f]">{{ course.title }}</h3>
             <p class="mb-0 mt-4 text-[15px] leading-[1.8] text-[#616d69]">{{ course.summary }}</p>

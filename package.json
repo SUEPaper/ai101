@@ -9,8 +9,10 @@
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview",
-    "docs:check-python": "python3 scripts/validate_ds_python.py",
-    "docs:check-content": "python3 scripts/check_ds_content.py && python3 scripts/check_ml_content.py",
+    "docs:check-python": "python3 scripts/validate_ds_python.py && python3 scripts/validate_dl_python.py",
+    "docs:check-content": "python3 scripts/check_ds_content.py && python3 scripts/check_ml_content.py && python3 scripts/check_dl_content.py",
+    "docs:check-dl": "python3 scripts/check_dl_content.py",
+    "docs:check-dl-python": "python3 scripts/validate_dl_python.py",
     "docs:check-ml": "python3 scripts/check_ml_content.py",
     "docs:check-ml-python": "python3 scripts/validate_ml_python.py"
   }

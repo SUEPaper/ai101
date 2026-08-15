@@ -9,6 +9,15 @@ AI101 是一个基于 VitePress 的人工智能系列课程静态网站，面向
 
 站点目标是提供一个清晰、稳定、可扫描的课程主页，让学习者能从首页进入完整学习路线和各课程页面。
 
+## 课程状态
+
+| 课程 | 当前状态 |
+|---|---|
+| 数据科学 | 已开放 |
+| 机器学习 | 已开放 |
+| 深度学习与大模型 | 已开放：32 章、64 个专用交互、8 次综合作业和 1 个结课项目 |
+| 人工智能实践课 | 规划中 |
+
 ## 技术栈
 
 - VitePress
@@ -72,7 +81,7 @@ pnpm docs:build
 pnpm docs:preview
 ```
 
-## 数据科学教程验证
+## 课程内容验证
 
 创建 Python 环境并安装课程依赖：
 
@@ -82,7 +91,7 @@ source .venv-ds/bin/activate
 python -m pip install -r requirements-ds.txt
 ```
 
-检查 27 个预备/讲次页面的结构、内部链接、测验、交互、模块作业和结课项目：
+检查数据科学、机器学习以及深度学习与大模型课程规划的结构、内部链接和配套内容：
 
 ```bash
 pnpm docs:check-content
@@ -95,6 +104,13 @@ pnpm docs:check-python
 ```
 
 代码校验按页面共享命名空间运行；标记为 `tutorial-validation: syntax-only` 的图形或第三方工作流片段只做语法检查。
+
+深度学习与大模型课程的第三方参考 PDF 保存在被 Git 忽略的 `ref/dl101/`，不会随网站发布。安装 `pypdf` 后可同步公开课件与推荐论文，或只复核已有缓存：
+
+```bash
+python3 scripts/sync_dl101_resources.py
+python3 scripts/sync_dl101_resources.py --verify-only
+```
 
 ## 部署
 

@@ -1,0 +1,16 @@
+<script setup lang="ts">
+import { computed, ref } from 'vue'
+const objective=ref<'contrastive'|'distill'|'masked'|'language'>('masked'), maskRatio=ref(.75), batch=ref(256), temperature=ref(.2)
+const specs={contrastive:{label:'SimCLR',target:'instance pairs'},distill:{label:'DINO',target:'teacher distribution'},masked:{label:'MAE',target:'masked pixels'},language:{label:'CLIP',target:'image-text pairs'}}
+const active=computed(()=>specs[objective.value])
+const visible=computed(()=>objective.value==='masked'?1-maskRatio.value:1)
+const negativePressure=computed(()=>objective.value==='contrastive'?Math.log(batch.value)/temperature.value:0)
+const transfer=computed(()=>Math.min(.96,.54+.12*Math.log10(batch.value)+(.8-Math.abs(maskRatio.value-.65))*.12+(objective.value==='language'?.08:0)))
+</script>
+<template><DlExperimentFrame index="11-B" title="视觉预训练目标路由器" question="相同 backbone 在对比、蒸馏、重建和图文对齐下被迫保留什么信息？" formula="view₁↔view₂ · teacher→student · visible→masked · image↔text">
+<template #visual><div class="routes" role="img" :aria-label="`${active.label} 预训练目标的数据路径`"><div class="source"></div><span>→</span><div class="encoder"></div><span>→</span><div v-if="objective==='masked'" class="masked"></div><div v-else-if="objective==='language'" class="textlines"></div><div v-else class="targets"><i></i><i></i><i></i></div><b>{{active.label}}</b></div></template>
+<template #controls><label>预训练目标<select v-model="objective"><option value="contrastive">SimCLR：对比学习</option><option value="distill">DINO：自蒸馏</option><option value="masked">MAE：掩码重建</option><option value="language">CLIP：图文对齐</option></select></label><label>mask ratio = {{maskRatio.toFixed(2)}}<input v-model.number="maskRatio" type="range" min="0.1" max="0.9" step="0.05"></label><label>batch / pair 数 = {{batch}}<input v-model.number="batch" type="range" min="32" max="1024" step="32"></label><label>temperature = {{temperature.toFixed(2)}}<input v-model.number="temperature" type="range" min="0.05" max="0.5" step="0.05"></label></template>
+<template #metrics><div><span>训练目标</span><strong>{{active.target}}</strong></div><div><span>可见 token 比例</span><strong>{{(visible*100).toFixed(0)}}%</strong></div><div><span>负样本压力代理</span><strong>{{negativePressure.toFixed(1)}}</strong></div><div><span>迁移响应代理</span><strong>{{transfer.toFixed(3)}}</strong></div></template>
+<template #note>四种目标不能只按线性探测准确率排序：它们保留的局部、语义、颜色、空间与跨模态信息不同。必须同时比较冻结探测、全量微调、密集预测和领域外鲁棒性。</template>
+</DlExperimentFrame></template>
+<style scoped>.routes{display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:center;min-height:280px;border:1px solid #294b5c;border-radius:7px;background:#0b172a;color:#f2c14e;font:12px ui-monospace,monospace}.source,.encoder,.masked,.textlines,.targets{width:84px;height:84px;border:2px solid #58d3c8;background:#173247}.source{background:repeating-linear-gradient(45deg,#173247 0 8px,#265063 8px 16px)}.encoder{transform:skewY(-8deg);background:#283a5a}.masked{background:repeating-linear-gradient(90deg,#f2c14e 0 9px,#16283c 9px 18px)}.textlines{background:repeating-linear-gradient(0deg,#58d3c8 0 4px,transparent 4px 15px)}.targets{display:grid;place-items:center}.targets i{width:48px;height:7px;background:#df6c5b}</style>

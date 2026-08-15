@@ -3,6 +3,75 @@ import { h } from 'vue'
 import type { Theme } from 'vitepress'
 import DefaultTheme from 'vitepress/theme'
 import AiHome from './components/AiHome.vue'
+import AdamWStateLab from './components/dl/AdamWStateLab.vue'
+import AnchorMatchLab from './components/dl/AnchorMatchLab.vue'
+import ArchitectureBudgetLab from './components/dl/ArchitectureBudgetLab.vue'
+import CompoundScalingLab from './components/dl/CompoundScalingLab.vue'
+import DepthwiseConvLab from './components/dl/DepthwiseConvLab.vue'
+import DilationFieldLab from './components/dl/DilationFieldLab.vue'
+import DlExperimentFrame from './components/dl/DlExperimentFrame.vue'
+import DlLessonHero from './components/dl/DlLessonHero.vue'
+import DlLessonProgress from './components/dl/DlLessonProgress.vue'
+import DlPaperCard from './components/dl/DlPaperCard.vue'
+import DlQuiz from './components/dl/DlQuiz.vue'
+import MixedPrecisionLab from './components/dl/MixedPrecisionLab.vue'
+import NmsWorkbenchLab from './components/dl/NmsWorkbenchLab.vue'
+import PanopticAssemblyLab from './components/dl/PanopticAssemblyLab.vue'
+import PatchTokenLab from './components/dl/PatchTokenLab.vue'
+import PromptMaskStabilityLab from './components/dl/PromptMaskStabilityLab.vue'
+import ResidualPathLab from './components/dl/ResidualPathLab.vue'
+import ScheduleBudgetLab from './components/dl/ScheduleBudgetLab.vue'
+import SegmentationMetricLab from './components/dl/SegmentationMetricLab.vue'
+import SetMatchingLab from './components/dl/SetMatchingLab.vue'
+import ShiftedWindowLab from './components/dl/ShiftedWindowLab.vue'
+import SignalPropagationLab from './components/dl/SignalPropagationLab.vue'
+import FocalLossLab from './components/dl/FocalLossLab.vue'
+import FlowTransportLab from './components/dl/FlowTransportLab.vue'
+import GanGameLab from './components/dl/GanGameLab.vue'
+import TrainingDiagnosisLab from './components/dl/TrainingDiagnosisLab.vue'
+import TransferFreezeLab from './components/dl/TransferFreezeLab.vue'
+import VisionPretrainLab from './components/dl/VisionPretrainLab.vue'
+import VitInductiveBiasLab from './components/dl/VitInductiveBiasLab.vue'
+import CodebookAutoregressiveLab from './components/dl/CodebookAutoregressiveLab.vue'
+import DcganShapeLab from './components/dl/DcganShapeLab.vue'
+import NoiseScheduleLab from './components/dl/NoiseScheduleLab.vue'
+import StyleMixLab from './components/dl/StyleMixLab.vue'
+import VariationalBottleneckLab from './components/dl/VariationalBottleneckLab.vue'
+import WassersteinCriticLab from './components/dl/WassersteinCriticLab.vue'
+import BpeMergeLab from './components/dl/BpeMergeLab.vue'
+import ContextSenseLab from './components/dl/ContextSenseLab.vue'
+import EmbeddingGeometryLab from './components/dl/EmbeddingGeometryLab.vue'
+import LanguageModelFactorizationLab from './components/dl/LanguageModelFactorizationLab.vue'
+import NegativeSamplingLab from './components/dl/NegativeSamplingLab.vue'
+import TextBoundaryLab from './components/dl/TextBoundaryLab.vue'
+import ArchitectureInterfaceLab from './components/dl/ArchitectureInterfaceLab.vue'
+import DedupContaminationLab from './components/dl/DedupContaminationLab.vue'
+import KlRewardLab from './components/dl/KlRewardLab.vue'
+import KvCacheLab from './components/dl/KvCacheLab.vue'
+import LoraBudgetLab from './components/dl/LoraBudgetLab.vue'
+import MoeRouterLab from './components/dl/MoeRouterLab.vue'
+import PreferencePairLab from './components/dl/PreferencePairLab.vue'
+import PretrainingObjectiveLab from './components/dl/PretrainingObjectiveLab.vue'
+import QuantizationErrorLab from './components/dl/QuantizationErrorLab.vue'
+import ScalingBudgetLab from './components/dl/ScalingBudgetLab.vue'
+import BootstrapEvaluationLab from './components/dl/BootstrapEvaluationLab.vue'
+import ConstrainedJsonLab from './components/dl/ConstrainedJsonLab.vue'
+import DecodingDistributionLab from './components/dl/DecodingDistributionLab.vue'
+import EvidenceConflictLab from './components/dl/EvidenceConflictLab.vue'
+import JudgeBiasLab from './components/dl/JudgeBiasLab.vue'
+import ModalityConflictLab from './components/dl/ModalityConflictLab.vue'
+import RetrievalPipelineLab from './components/dl/RetrievalPipelineLab.vue'
+import SpeculativeDecodeLab from './components/dl/SpeculativeDecodeLab.vue'
+import ToolStateMachineLab from './components/dl/ToolStateMachineLab.vue'
+import VisualTokenBudgetLab from './components/dl/VisualTokenBudgetLab.vue'
+import HardwareRooflineLab from './components/dl/HardwareRooflineLab.vue'
+import KernelLanguageChoiceLab from './components/dl/KernelLanguageChoiceLab.vue'
+import KernelTilingLab from './components/dl/KernelTilingLab.vue'
+import ParallelismPlannerLab from './components/dl/ParallelismPlannerLab.vue'
+import PrefixCacheLab from './components/dl/PrefixCacheLab.vue'
+import ServingSchedulerLab from './components/dl/ServingSchedulerLab.vue'
+import TrainingInferenceMemoryLab from './components/dl/TrainingInferenceMemoryLab.vue'
+import ZeroStateLab from './components/dl/ZeroStateLab.vue'
 import ArrayShapeLab from './components/ds/ArrayShapeLab.vue'
 import ActivationFunctionScope from './components/ml/ActivationFunctionScope.vue'
 import AttentionRoutingConsole from './components/ml/AttentionRoutingConsole.vue'
@@ -133,6 +202,75 @@ export default {
   },
   enhanceApp({ app }) {
     app.component('AiHome', AiHome)
+    app.component('AdamWStateLab', AdamWStateLab)
+    app.component('AnchorMatchLab', AnchorMatchLab)
+    app.component('ArchitectureBudgetLab', ArchitectureBudgetLab)
+    app.component('CompoundScalingLab', CompoundScalingLab)
+    app.component('DepthwiseConvLab', DepthwiseConvLab)
+    app.component('DilationFieldLab', DilationFieldLab)
+    app.component('DlExperimentFrame', DlExperimentFrame)
+    app.component('DlLessonHero', DlLessonHero)
+    app.component('DlLessonProgress', DlLessonProgress)
+    app.component('DlPaperCard', DlPaperCard)
+    app.component('DlQuiz', DlQuiz)
+    app.component('MixedPrecisionLab', MixedPrecisionLab)
+    app.component('NmsWorkbenchLab', NmsWorkbenchLab)
+    app.component('PanopticAssemblyLab', PanopticAssemblyLab)
+    app.component('PatchTokenLab', PatchTokenLab)
+    app.component('PromptMaskStabilityLab', PromptMaskStabilityLab)
+    app.component('ResidualPathLab', ResidualPathLab)
+    app.component('ScheduleBudgetLab', ScheduleBudgetLab)
+    app.component('SegmentationMetricLab', SegmentationMetricLab)
+    app.component('SetMatchingLab', SetMatchingLab)
+    app.component('ShiftedWindowLab', ShiftedWindowLab)
+    app.component('SignalPropagationLab', SignalPropagationLab)
+    app.component('FocalLossLab', FocalLossLab)
+    app.component('FlowTransportLab', FlowTransportLab)
+    app.component('GanGameLab', GanGameLab)
+    app.component('TrainingDiagnosisLab', TrainingDiagnosisLab)
+    app.component('TransferFreezeLab', TransferFreezeLab)
+    app.component('VisionPretrainLab', VisionPretrainLab)
+    app.component('VitInductiveBiasLab', VitInductiveBiasLab)
+    app.component('CodebookAutoregressiveLab', CodebookAutoregressiveLab)
+    app.component('DcganShapeLab', DcganShapeLab)
+    app.component('NoiseScheduleLab', NoiseScheduleLab)
+    app.component('StyleMixLab', StyleMixLab)
+    app.component('VariationalBottleneckLab', VariationalBottleneckLab)
+    app.component('WassersteinCriticLab', WassersteinCriticLab)
+    app.component('BpeMergeLab', BpeMergeLab)
+    app.component('ContextSenseLab', ContextSenseLab)
+    app.component('EmbeddingGeometryLab', EmbeddingGeometryLab)
+    app.component('LanguageModelFactorizationLab', LanguageModelFactorizationLab)
+    app.component('NegativeSamplingLab', NegativeSamplingLab)
+    app.component('TextBoundaryLab', TextBoundaryLab)
+    app.component('ArchitectureInterfaceLab', ArchitectureInterfaceLab)
+    app.component('DedupContaminationLab', DedupContaminationLab)
+    app.component('KlRewardLab', KlRewardLab)
+    app.component('KvCacheLab', KvCacheLab)
+    app.component('LoraBudgetLab', LoraBudgetLab)
+    app.component('MoeRouterLab', MoeRouterLab)
+    app.component('PreferencePairLab', PreferencePairLab)
+    app.component('PretrainingObjectiveLab', PretrainingObjectiveLab)
+    app.component('QuantizationErrorLab', QuantizationErrorLab)
+    app.component('ScalingBudgetLab', ScalingBudgetLab)
+    app.component('BootstrapEvaluationLab', BootstrapEvaluationLab)
+    app.component('ConstrainedJsonLab', ConstrainedJsonLab)
+    app.component('DecodingDistributionLab', DecodingDistributionLab)
+    app.component('EvidenceConflictLab', EvidenceConflictLab)
+    app.component('JudgeBiasLab', JudgeBiasLab)
+    app.component('ModalityConflictLab', ModalityConflictLab)
+    app.component('RetrievalPipelineLab', RetrievalPipelineLab)
+    app.component('SpeculativeDecodeLab', SpeculativeDecodeLab)
+    app.component('ToolStateMachineLab', ToolStateMachineLab)
+    app.component('VisualTokenBudgetLab', VisualTokenBudgetLab)
+    app.component('HardwareRooflineLab', HardwareRooflineLab)
+    app.component('KernelLanguageChoiceLab', KernelLanguageChoiceLab)
+    app.component('KernelTilingLab', KernelTilingLab)
+    app.component('ParallelismPlannerLab', ParallelismPlannerLab)
+    app.component('PrefixCacheLab', PrefixCacheLab)
+    app.component('ServingSchedulerLab', ServingSchedulerLab)
+    app.component('TrainingInferenceMemoryLab', TrainingInferenceMemoryLab)
+    app.component('ZeroStateLab', ZeroStateLab)
     app.component('ArrayShapeLab', ArrayShapeLab)
     app.component('ActivationFunctionScopeLab', ActivationFunctionScope)
     app.component('AttentionRoutingConsoleLab', AttentionRoutingConsole)

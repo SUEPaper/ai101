@@ -1,0 +1,551 @@
+{
+  "version": 1,
+  "updated_at": "2026-08-14",
+  "slide_sources": [
+    {
+      "id": "stanford-cs231n-2026",
+      "course": "Stanford CS231n",
+      "offering": "Spring 2026",
+      "page_url": "https://cs231n.stanford.edu/schedule.html",
+      "link_base_url": "https://cs231n.stanford.edu/schedule.html",
+      "link_pattern": "^https://cs231n\\.stanford\\.edu/slides/2026/lecture_.*\\.pdf$",
+      "output_dir": "slides/stanford-cs231n-2026",
+      "allow_empty": false,
+      "note": "下载课程表中公开的正式 lecture slides，不包含 section、作业和项目材料。"
+    },
+    {
+      "id": "stanford-cs224n-2026",
+      "course": "Stanford CS224n",
+      "offering": "Winter 2026",
+      "page_url": "https://web.stanford.edu/class/cs224n/",
+      "link_base_url": "https://web.stanford.edu/class/cs224n/",
+      "link_pattern": "^https://web\\.stanford\\.edu/class/cs224n/slides_w26/cs224n-2026-lecture.*\\.pdf$",
+      "output_dir": "slides/stanford-cs224n-2026",
+      "allow_empty": false,
+      "note": "下载课程表中公开的正式 lecture slides；讲次编号不连续表示该讲未公开 PDF。"
+    },
+    {
+      "id": "cmu-anlp-spring-2026",
+      "course": "CMU Advanced NLP",
+      "offering": "Spring 2026",
+      "page_url": "https://cmu-l3.github.io/anlp-spring2026/",
+      "link_base_url": "https://cmu-l3.github.io/anlp-spring2026/",
+      "link_pattern": "^https://cmu-l3\\.github\\.io/anlp-spring2026/static_files/anlp-s2026-[0-9]+.*\\.pdf$",
+      "output_dir": "slides/cmu-anlp-spring-2026",
+      "allow_empty": false,
+      "note": "下载课程表中 01–23 讲公开 slides。"
+    },
+    {
+      "id": "cmu-idl-fall-2026",
+      "course": "CMU 11-785 Introduction to Deep Learning",
+      "offering": "Fall 2026",
+      "page_url": "https://deeplearning.cs.cmu.edu/F26/pages/tables/lectures_table.html",
+      "link_base_url": "https://deeplearning.cs.cmu.edu/F26/index.html",
+      "link_pattern": "^https://deeplearning\\.cs\\.cmu\\.edu/F26/.*\\.pdf$",
+      "output_dir": "slides/cmu-idl-fall-2026",
+      "allow_empty": true,
+      "note": "2026-08-14 检查时课程表已列出日期和主题，但尚未发布 slides；后续运行脚本会自动复查。"
+    },
+    {
+      "id": "cmu-idl-spring-2026-supplement",
+      "course": "CMU 11-785 Introduction to Deep Learning",
+      "offering": "Spring 2026（补充版本）",
+      "page_url": "https://deeplearning.cs.cmu.edu/S26/pages/tables/lectures_table.html",
+      "link_base_url": "https://deeplearning.cs.cmu.edu/S26/index.html",
+      "link_pattern": "^https://deeplearning\\.cs\\.cmu\\.edu/S26/documents/slides/.*\\.pdf$",
+      "output_dir": "slides/cmu-idl-spring-2026-supplement",
+      "allow_empty": false,
+      "note": "F26 课件尚未发布期间使用的明确标注补充版本，不冒充 F26 资料。"
+    }
+  ],
+  "papers": [
+    {
+      "id": "adam",
+      "module": "01-training",
+      "module_title": "现代训练",
+      "level": "必读",
+      "title": "Adam: A Method for Stochastic Optimization",
+      "url": "https://arxiv.org/pdf/1412.6980"
+    },
+    {
+      "id": "adamw",
+      "module": "01-training",
+      "module_title": "现代训练",
+      "level": "必读",
+      "title": "Decoupled Weight Decay Regularization",
+      "url": "https://arxiv.org/pdf/1711.05101"
+    },
+    {
+      "id": "batch-normalization",
+      "module": "01-training",
+      "module_title": "现代训练",
+      "level": "选读",
+      "title": "Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift",
+      "url": "https://arxiv.org/pdf/1502.03167"
+    },
+    {
+      "id": "alexnet",
+      "module": "02-vision",
+      "module_title": "计算机视觉",
+      "level": "必读",
+      "title": "ImageNet Classification with Deep Convolutional Neural Networks",
+      "url": "https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf"
+    },
+    {
+      "id": "vgg",
+      "module": "02-vision",
+      "module_title": "计算机视觉",
+      "level": "必读",
+      "title": "Very Deep Convolutional Networks for Large-Scale Image Recognition",
+      "url": "https://arxiv.org/pdf/1409.1556"
+    },
+    {
+      "id": "resnet",
+      "module": "02-vision",
+      "module_title": "计算机视觉",
+      "level": "必读",
+      "title": "Deep Residual Learning for Image Recognition",
+      "url": "https://arxiv.org/pdf/1512.03385"
+    },
+    {
+      "id": "convnext",
+      "module": "02-vision",
+      "module_title": "计算机视觉",
+      "level": "选读",
+      "title": "A ConvNet for the 2020s",
+      "url": "https://arxiv.org/pdf/2201.03545"
+    },
+    {
+      "id": "faster-rcnn",
+      "module": "02-vision",
+      "module_title": "计算机视觉",
+      "level": "必读",
+      "title": "Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks",
+      "url": "https://arxiv.org/pdf/1506.01497"
+    },
+    {
+      "id": "yolo",
+      "module": "02-vision",
+      "module_title": "计算机视觉",
+      "level": "必读",
+      "title": "You Only Look Once: Unified, Real-Time Object Detection",
+      "url": "https://arxiv.org/pdf/1506.02640"
+    },
+    {
+      "id": "detr",
+      "module": "02-vision",
+      "module_title": "计算机视觉",
+      "level": "必读",
+      "title": "End-to-End Object Detection with Transformers",
+      "url": "https://arxiv.org/pdf/2005.12872"
+    },
+    {
+      "id": "fcn",
+      "module": "02-vision",
+      "module_title": "计算机视觉",
+      "level": "必读",
+      "title": "Fully Convolutional Networks for Semantic Segmentation",
+      "url": "https://arxiv.org/pdf/1411.4038"
+    },
+    {
+      "id": "unet",
+      "module": "02-vision",
+      "module_title": "计算机视觉",
+      "level": "必读",
+      "title": "U-Net: Convolutional Networks for Biomedical Image Segmentation",
+      "url": "https://arxiv.org/pdf/1505.04597"
+    },
+    {
+      "id": "mask-rcnn",
+      "module": "02-vision",
+      "module_title": "计算机视觉",
+      "level": "选读",
+      "title": "Mask R-CNN",
+      "url": "https://arxiv.org/pdf/1703.06870"
+    },
+    {
+      "id": "segment-anything",
+      "module": "02-vision",
+      "module_title": "计算机视觉",
+      "level": "选读",
+      "title": "Segment Anything",
+      "url": "https://arxiv.org/pdf/2304.02643"
+    },
+    {
+      "id": "vit",
+      "module": "02-vision",
+      "module_title": "计算机视觉",
+      "level": "必读",
+      "title": "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale",
+      "url": "https://arxiv.org/pdf/2010.11929"
+    },
+    {
+      "id": "swin-transformer",
+      "module": "02-vision",
+      "module_title": "计算机视觉",
+      "level": "必读",
+      "title": "Swin Transformer: Hierarchical Vision Transformer using Shifted Windows",
+      "url": "https://arxiv.org/pdf/2103.14030"
+    },
+    {
+      "id": "clip",
+      "module": "02-vision",
+      "module_title": "计算机视觉",
+      "level": "必读",
+      "title": "Learning Transferable Visual Models From Natural Language Supervision",
+      "url": "https://arxiv.org/pdf/2103.00020"
+    },
+    {
+      "id": "simclr",
+      "module": "02-vision",
+      "module_title": "计算机视觉",
+      "level": "选读",
+      "title": "A Simple Framework for Contrastive Learning of Visual Representations",
+      "url": "https://arxiv.org/pdf/2002.05709"
+    },
+    {
+      "id": "dino",
+      "module": "02-vision",
+      "module_title": "计算机视觉",
+      "level": "选读",
+      "title": "Emerging Properties in Self-Supervised Vision Transformers",
+      "url": "https://arxiv.org/pdf/2104.14294"
+    },
+    {
+      "id": "mae",
+      "module": "02-vision",
+      "module_title": "计算机视觉",
+      "level": "选读",
+      "title": "Masked Autoencoders Are Scalable Vision Learners",
+      "url": "https://arxiv.org/pdf/2111.06377"
+    },
+    {
+      "id": "gan",
+      "module": "03-generative",
+      "module_title": "生成模型",
+      "level": "必读",
+      "title": "Generative Adversarial Nets",
+      "url": "https://arxiv.org/pdf/1406.2661"
+    },
+    {
+      "id": "dcgan",
+      "module": "03-generative",
+      "module_title": "生成模型",
+      "level": "选读",
+      "title": "Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks",
+      "url": "https://arxiv.org/pdf/1511.06434"
+    },
+    {
+      "id": "wgan",
+      "module": "03-generative",
+      "module_title": "生成模型",
+      "level": "必读",
+      "title": "Wasserstein GAN",
+      "url": "https://arxiv.org/pdf/1701.07875"
+    },
+    {
+      "id": "wgan-gp",
+      "module": "03-generative",
+      "module_title": "生成模型",
+      "level": "选读",
+      "title": "Improved Training of Wasserstein GANs",
+      "url": "https://arxiv.org/pdf/1704.00028"
+    },
+    {
+      "id": "stylegan",
+      "module": "03-generative",
+      "module_title": "生成模型",
+      "level": "选读",
+      "title": "A Style-Based Generator Architecture for Generative Adversarial Networks",
+      "url": "https://arxiv.org/pdf/1812.04948"
+    },
+    {
+      "id": "vae",
+      "module": "03-generative",
+      "module_title": "生成模型",
+      "level": "必读",
+      "title": "Auto-Encoding Variational Bayes",
+      "url": "https://arxiv.org/pdf/1312.6114"
+    },
+    {
+      "id": "vq-vae",
+      "module": "03-generative",
+      "module_title": "生成模型",
+      "level": "选读",
+      "title": "Neural Discrete Representation Learning",
+      "url": "https://arxiv.org/pdf/1711.00937"
+    },
+    {
+      "id": "ddpm",
+      "module": "03-generative",
+      "module_title": "生成模型",
+      "level": "必读",
+      "title": "Denoising Diffusion Probabilistic Models",
+      "url": "https://arxiv.org/pdf/2006.11239"
+    },
+    {
+      "id": "latent-diffusion",
+      "module": "03-generative",
+      "module_title": "生成模型",
+      "level": "选读",
+      "title": "High-Resolution Image Synthesis with Latent Diffusion Models",
+      "url": "https://arxiv.org/pdf/2112.10752"
+    },
+    {
+      "id": "flow-matching",
+      "module": "03-generative",
+      "module_title": "生成模型",
+      "level": "选读",
+      "title": "Flow Matching for Generative Modeling",
+      "url": "https://arxiv.org/pdf/2210.02747"
+    },
+    {
+      "id": "word2vec",
+      "module": "04-nlp",
+      "module_title": "NLP 基础",
+      "level": "必读",
+      "title": "Efficient Estimation of Word Representations in Vector Space",
+      "url": "https://arxiv.org/pdf/1301.3781"
+    },
+    {
+      "id": "negative-sampling",
+      "module": "04-nlp",
+      "module_title": "NLP 基础",
+      "level": "选读",
+      "title": "Distributed Representations of Words and Phrases and their Compositionality",
+      "url": "https://arxiv.org/pdf/1310.4546"
+    },
+    {
+      "id": "glove",
+      "module": "04-nlp",
+      "module_title": "NLP 基础",
+      "level": "必读",
+      "title": "GloVe: Global Vectors for Word Representation",
+      "url": "https://nlp.stanford.edu/pubs/glove.pdf"
+    },
+    {
+      "id": "subword-nmt",
+      "module": "04-nlp",
+      "module_title": "NLP 基础",
+      "level": "必读",
+      "title": "Neural Machine Translation of Rare Words with Subword Units",
+      "url": "https://arxiv.org/pdf/1508.07909"
+    },
+    {
+      "id": "sentencepiece",
+      "module": "04-nlp",
+      "module_title": "NLP 基础",
+      "level": "选读",
+      "title": "SentencePiece: A simple and language independent subword tokenizer and detokenizer for Neural Text Processing",
+      "url": "https://arxiv.org/pdf/1808.06226"
+    },
+    {
+      "id": "attention-is-all-you-need",
+      "module": "05-llm",
+      "module_title": "大语言模型",
+      "level": "前置复习",
+      "title": "Attention Is All You Need",
+      "url": "https://arxiv.org/pdf/1706.03762"
+    },
+    {
+      "id": "bert",
+      "module": "05-llm",
+      "module_title": "大语言模型",
+      "level": "必读",
+      "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+      "url": "https://arxiv.org/pdf/1810.04805"
+    },
+    {
+      "id": "gpt2",
+      "module": "05-llm",
+      "module_title": "大语言模型",
+      "level": "必读",
+      "title": "Language Models are Unsupervised Multitask Learners",
+      "url": "https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf"
+    },
+    {
+      "id": "t5",
+      "module": "05-llm",
+      "module_title": "大语言模型",
+      "level": "选读",
+      "title": "Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer",
+      "url": "https://arxiv.org/pdf/1910.10683"
+    },
+    {
+      "id": "rmsnorm",
+      "module": "05-llm",
+      "module_title": "大语言模型",
+      "level": "选读",
+      "title": "Root Mean Square Layer Normalization",
+      "url": "https://arxiv.org/pdf/1910.07467"
+    },
+    {
+      "id": "roformer",
+      "module": "05-llm",
+      "module_title": "大语言模型",
+      "level": "必读",
+      "title": "RoFormer: Enhanced Transformer with Rotary Position Embedding",
+      "url": "https://arxiv.org/pdf/2104.09864"
+    },
+    {
+      "id": "gqa",
+      "module": "05-llm",
+      "module_title": "大语言模型",
+      "level": "选读",
+      "title": "GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints",
+      "url": "https://arxiv.org/pdf/2305.13245"
+    },
+    {
+      "id": "flashattention",
+      "module": "05-llm",
+      "module_title": "大语言模型",
+      "level": "必读",
+      "title": "FlashAttention: Fast and Memory-Efficient Exact Attention with IO-Awareness",
+      "url": "https://arxiv.org/pdf/2205.14135"
+    },
+    {
+      "id": "llama",
+      "module": "05-llm",
+      "module_title": "大语言模型",
+      "level": "必读",
+      "title": "LLaMA: Open and Efficient Foundation Language Models",
+      "url": "https://arxiv.org/pdf/2302.13971"
+    },
+    {
+      "id": "scaling-laws",
+      "module": "05-llm",
+      "module_title": "大语言模型",
+      "level": "必读",
+      "title": "Scaling Laws for Neural Language Models",
+      "url": "https://arxiv.org/pdf/2001.08361"
+    },
+    {
+      "id": "chinchilla",
+      "module": "05-llm",
+      "module_title": "大语言模型",
+      "level": "必读",
+      "title": "Training Compute-Optimal Large Language Models",
+      "url": "https://arxiv.org/pdf/2203.15556"
+    },
+    {
+      "id": "lora",
+      "module": "05-llm",
+      "module_title": "大语言模型",
+      "level": "必读",
+      "title": "LoRA: Low-Rank Adaptation of Large Language Models",
+      "url": "https://arxiv.org/pdf/2106.09685"
+    },
+    {
+      "id": "qlora",
+      "module": "05-llm",
+      "module_title": "大语言模型",
+      "level": "必读",
+      "title": "QLoRA: Efficient Finetuning of Quantized LLMs",
+      "url": "https://arxiv.org/pdf/2305.14314"
+    },
+    {
+      "id": "instructgpt",
+      "module": "05-llm",
+      "module_title": "大语言模型",
+      "level": "必读",
+      "title": "Training language models to follow instructions with human feedback",
+      "url": "https://arxiv.org/pdf/2203.02155"
+    },
+    {
+      "id": "dpo",
+      "module": "05-llm",
+      "module_title": "大语言模型",
+      "level": "必读",
+      "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+      "url": "https://arxiv.org/pdf/2305.18290"
+    },
+    {
+      "id": "deepseek-r1",
+      "module": "05-llm",
+      "module_title": "大语言模型",
+      "level": "选读",
+      "title": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
+      "url": "https://arxiv.org/pdf/2501.12948"
+    },
+    {
+      "id": "rag",
+      "module": "05-llm",
+      "module_title": "大语言模型",
+      "level": "必读",
+      "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+      "url": "https://arxiv.org/pdf/2005.11401"
+    },
+    {
+      "id": "react",
+      "module": "05-llm",
+      "module_title": "大语言模型",
+      "level": "必读",
+      "title": "ReAct: Synergizing Reasoning and Acting in Language Models",
+      "url": "https://arxiv.org/pdf/2210.03629"
+    },
+    {
+      "id": "toolformer",
+      "module": "05-llm",
+      "module_title": "大语言模型",
+      "level": "选读",
+      "title": "Toolformer: Language Models Can Teach Themselves to Use Tools",
+      "url": "https://arxiv.org/pdf/2302.04761"
+    },
+    {
+      "id": "helm",
+      "module": "05-llm",
+      "module_title": "大语言模型",
+      "level": "选读",
+      "title": "Holistic Evaluation of Language Models",
+      "url": "https://arxiv.org/pdf/2211.09110"
+    },
+    {
+      "id": "megatron-lm",
+      "module": "06-infra",
+      "module_title": "GPU 与 AI Infra",
+      "level": "必读",
+      "title": "Megatron-LM: Training Multi-Billion Parameter Language Models Using Model Parallelism",
+      "url": "https://arxiv.org/pdf/1909.08053"
+    },
+    {
+      "id": "zero",
+      "module": "06-infra",
+      "module_title": "GPU 与 AI Infra",
+      "level": "必读",
+      "title": "ZeRO: Memory Optimizations Toward Training Trillion Parameter Models",
+      "url": "https://arxiv.org/pdf/1910.02054"
+    },
+    {
+      "id": "triton",
+      "module": "06-infra",
+      "module_title": "GPU 与 AI Infra",
+      "level": "必读",
+      "title": "Triton: An Intermediate Language and Compiler for Tiled Neural Network Computations",
+      "url": "https://www.eecs.harvard.edu/~htk/publication/2019-mapl-tillet-kung-cox.pdf"
+    },
+    {
+      "id": "tilelang",
+      "module": "06-infra",
+      "module_title": "GPU 与 AI Infra",
+      "level": "选读",
+      "title": "TileLang: A Composable Tiled Programming Model for AI Systems",
+      "url": "https://arxiv.org/pdf/2504.17577"
+    },
+    {
+      "id": "vllm-pagedattention",
+      "module": "06-infra",
+      "module_title": "GPU 与 AI Infra",
+      "level": "必读",
+      "title": "Efficient Memory Management for Large Language Model Serving with PagedAttention",
+      "url": "https://arxiv.org/pdf/2309.06180"
+    },
+    {
+      "id": "sglang",
+      "module": "06-infra",
+      "module_title": "GPU 与 AI Infra",
+      "level": "必读",
+      "title": "SGLang: Efficient Execution of Structured Language Model Programs",
+      "url": "https://arxiv.org/pdf/2312.07104"
+    }
+  ]
+}

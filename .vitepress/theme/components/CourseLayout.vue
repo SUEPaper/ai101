@@ -2,6 +2,7 @@
 import { nextTick, onMounted, watch } from 'vue'
 import { Content, useData, withBase } from 'vitepress'
 import CourseNav from './CourseNav.vue'
+import DlCourseShell from './dl/DlCourseShell.vue'
 import DsCourseShell from './ds/DsCourseShell.vue'
 import MlCourseShell from './ml/MlCourseShell.vue'
 
@@ -51,6 +52,9 @@ watch(() => page.value.relativePath, repairMathJaxViewBox)
       <MlCourseShell v-else-if="frontmatter.course === 'machine-learning'">
         <Content />
       </MlCourseShell>
+      <DlCourseShell v-else-if="frontmatter.course === 'deep-learning'">
+        <Content />
+      </DlCourseShell>
       <article v-else class="vp-doc mx-auto w-full max-w-[860px] px-5 py-12 sm:px-6 md:py-16">
         <Content />
       </article>
