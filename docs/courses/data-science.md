@@ -8,17 +8,17 @@ outline: false
 <div class="ds-course-hero">
   <p class="ds-course-hero__label">AI101 · DATA SCIENCE</p>
   <h1>从一张表开始，建立可信的数据判断</h1>
-  <p>这不是 Python API 清单。你会沿着真实的数据工作流，学习如何提出问题、检查数据、建立模型、衡量不确定性，并把计算结果变成可以审查的证据。</p>
+  <p>这不是 Python API 清单。你会沿着真实的数据工作流，学习如何提出问题、检查数据、建立模型、衡量不确定性，并把表格与图像变成可以审查的证据。</p>
   <div class="ds-stat-strip">
-    <div><b>26 讲</b><span>从数据处理到无监督学习</span></div>
-    <div><b>55–70h</b><span>正文、实验、练习与项目</span></div>
+    <div><b>26 + 3 讲</b><span>数据科学主线与图像桥接</span></div>
+    <div><b>61–78h</b><span>正文、实验、练习与项目</span></div>
     <div><b>基础 Python</b><span>不预设统计与线性代数课程</span></div>
   </div>
 </div>
 
 ## 你最终会完成什么
 
-学完这门课，你应当能够独立完成一次中等规模的数据分析：从模糊的问题出发，识别需要的数据，完成清洗和探索，选择合适的统计或机器学习方法，评价结果的稳定性，并明确写出结论不能说明什么。
+学完这门课，你应当能够独立完成一次中等规模的数据分析：从模糊的问题出发，识别需要的数据，完成清洗和探索，选择合适的统计或机器学习方法，评价结果的稳定性，并明确写出结论不能说明什么。图像桥接模块还会让你使用 OpenCV 与 Python 检查图像数组、执行可控变换，并把分割区域整理成表格数据。
 
 <figure class="ds-figure">
   <div class="ds-flow">
@@ -40,6 +40,11 @@ outline: false
 <div class="ds-note">
   <strong>第一次学习从 P0 开始</strong>
   预备单元会检查 Jupyter、NumPy、Pandas 和数学基础。已经熟悉这些内容的学习者可以通过诊断题快速跳过。
+</div>
+
+<div class="ds-note">
+  <strong>继续学习计算机视觉时完成 V1–V3</strong>
+  三讲图像桥接模块位于 26 讲主线之后，只使用 OpenCV 的 Python API。它负责图像数据基础；后续机器学习和深度学习课程不再重复讲 BGR/RGB、HWC/CHW、插值、阈值和形态学入门。
 </div>
 
 ## 课程地图

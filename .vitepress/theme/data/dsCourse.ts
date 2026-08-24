@@ -88,6 +88,15 @@ export const dsModules: DsModule[] = [
     ]
   },
   {
+    title: '图像数据桥接',
+    summary: '把图像变成可检查、可变换、可测量的数组与对象表。',
+    lessons: [
+      { number: 'V1', title: '数字图像：从像素到数组合同', href: '/courses/data-science/v1-digital-images', available: true },
+      { number: 'V2', title: '像素变换与几何变换', href: '/courses/data-science/v2-pixel-geometric-transformations', available: true },
+      { number: 'V3', title: '空间操作、分割与区域测量', href: '/courses/data-science/v3-spatial-segmentation', available: true }
+    ]
+  },
+  {
     title: '综合实践',
     summary: '用模块作业和结课项目把方法组合成完整工作流。',
     lessons: [

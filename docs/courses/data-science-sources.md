@@ -14,12 +14,15 @@ description: 数据科学自学课程的参考资料、原创素材、第三方�
 | Berkeley Data 100 Summer 2025，26 讲课程 PPT | 确认主题顺序和知识边界 | 公开传播与改编权限待权利人确认 | 不公开 PPT 文件、截图、翻译或版式复刻；仅参考公共知识主题 |
 | *Learning Data Science* | 确认章节主题与补充阅读入口 | 原始教材标注 `CC BY-NC-ND 4.0` | 不公开翻译或改编文本；不复制原图、案例、练习和答案；仅链接和标注主题参考 |
 | Creative Commons 官方 Legal Code 与 FAQ | 判断 ND 改编分享边界 | 官方法律文本与说明 | 在内容计划中链接原文，不把本项目说明表述为法律意见 |
+| [OpenCV Python 官方教程](https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html) | 确认 V1–V3 的 Python API、参数语义与知识边界 | OpenCV 官方文档；OpenCV 本体为 Apache 2.0 | 只引用 API 事实并链接原页；中文正文、数据、图解、代码、练习与交互全部独立创作 |
+| [MathWorks 图像处理课程目录](https://ww2.mathworks.cn/learn/training/image-processing-with-matlab.html) | 交叉核对“预处理—分割—测量—批处理”工作流边界 | 公开课程介绍，未据此取得内容改编权 | 不复制 MATLAB 代码、课程文字、图片或练习；只把公开主题列表作为范围检查 |
+| [MigoXV/digital-image-processing](https://github.com/MigoXV/digital-image-processing) | 交叉核对传统数字图像处理主题范围 | 仓库未声明许可证 | 不复制其正文、图片、公式编排和 C++ 示例；仅用于判断哪些高级主题不进入主线 |
 
 ## 本站原创内容
 
 | 内容 | 来源 | 第三方数据 | 备注 |
 |---|---|---|---|
-| P0 与第 01–26 讲中文正文 | 本项目从学习目标独立编写 | 无 | 未逐句翻译教材或 PPT |
+| P0、第 01–26 讲与 V1–V3 中文正文 | 本项目从学习目标独立编写 | 无 | 未逐句翻译教材、PPT 或第三方教程 |
 | 课程教学图与交互组件 | Vue、HTML、CSS、SVG 原创实现 | 无 | 未使用 PPT 截图或重画原图 |
 | 共享单车、能源站、保障房、公共服务案例 | 虚构案例 | 无 | 名称、叙事、数值与任务均为本课程原创 |
 | 页面中的小型表格数据 | 手工构造或固定种子合成 | 无 | 不描述真实城市或群体 |
@@ -30,7 +33,7 @@ description: 数据科学自学课程的参考资料、原创素材、第三方�
 
 ## 第三方软件 API
 
-课程示例使用 Python 标准库、NumPy、Pandas、Matplotlib、Seaborn 与 scikit-learn 的公共 API。API 名称、函数签名、数学公式和算法属于教学所需的事实与操作接口；网站代码仍需遵守各软件自身许可证。项目未把第三方库代码复制进教程。
+课程示例使用 Python 标准库、NumPy、Pandas、Matplotlib、Seaborn、scikit-learn 与 OpenCV Python 的公共 API。API 名称、函数签名、数学公式和算法属于教学所需的事实与操作接口；网站代码仍需遵守各软件自身许可证。项目未把第三方库代码复制进教程，V1–V3 不使用 OpenCV C++ 示例。
 
 ## 发布检查清单
 

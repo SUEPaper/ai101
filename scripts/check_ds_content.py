@@ -29,21 +29,28 @@ def resolve_course_href(href: str) -> Path | None:
 
 def main() -> None:
     errors: list[str] = []
-    lesson_files = sorted(COURSE.glob("[0-9][0-9]-*.md"))
-    numbers = [path.name[:2] for path in lesson_files]
-    expected = [f"{number:02d}" for number in range(27)]
-    if numbers != expected:
-        errors.append(f"讲次文件不完整：期望 {expected}，实际 {numbers}")
+    core_lesson_files = sorted(COURSE.glob("[0-9][0-9]-*.md"))
+    bridge_lesson_files = sorted(COURSE.glob("v[1-3]-*.md"))
+    lesson_files = [*core_lesson_files, *bridge_lesson_files]
+    identifiers = [path.name[:2].upper() for path in lesson_files]
+    expected = [*[f"{number:02d}" for number in range(27)], "V1", "V2", "V3"]
+    if identifiers != expected:
+        errors.append(f"讲次文件不完整：期望 {expected}，实际 {identifiers}")
 
     interaction_names: set[str] = set()
+    bridge_labs = {
+        "V1": "<PixelProbeLab />",
+        "V2": "<GeometryTransformLab />",
+        "V3": "<SegmentationMeasureLab />",
+    }
     for path in lesson_files:
         text = path.read_text(encoding="utf-8")
-        number = path.name[:2]
+        number = path.name[:2].upper()
         required = {
             "course frontmatter": "course: data-science",
             "lesson hero": "<DsLessonHero",
             "exercise": "代码练习",
-            "summary": "本讲小结" if number != "26" else "课程主线收束",
+            "summary": "本讲小结" if number != "26" else "无监督学习模块收束",
             "references": "## 参考资料",
             "progress": "<DsLessonProgress",
             "originality note": "原创",
@@ -62,6 +69,14 @@ def main() -> None:
 
         if "ref/ds101" in text:
             errors.append(f"{path.relative_to(ROOT)} 不应把私有参考路径写入教程正文")
+
+        if number in bridge_labs:
+            for token in ("import cv2 as cv", "OpenCV", bridge_labs[number]):
+                if token not in text:
+                    errors.append(f"{path.relative_to(ROOT)} 缺少图像桥接要求：{token}")
+            for forbidden in ("#include", "cv::", "cv.imshow"):
+                if forbidden in text:
+                    errors.append(f"{path.relative_to(ROOT)} 不应出现：{forbidden}")
 
         interaction_names.update(re.findall(r"<([A-Z][A-Za-z0-9]*Lab)\s*/>", text))
 
@@ -88,7 +103,7 @@ def main() -> None:
         raise SystemExit("数据科学内容检查失败：\n- " + "\n- ".join(errors))
 
     print(
-        f"数据科学内容检查通过：{len(lesson_files)} 个预备/讲次页面，"
+        f"数据科学内容检查通过：{len(lesson_files)} 个预备/核心/桥接讲次页面，"
         f"{len(interaction_names)} 类交互实验，7 次模块作业与 1 个结课项目。"
     )
 

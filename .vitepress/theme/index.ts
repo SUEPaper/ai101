@@ -141,6 +141,9 @@ import SqlJoinLab from './components/ds/SqlJoinLab.vue'
 import SqlQueryLab from './components/ds/SqlQueryLab.vue'
 import SvdLayersLab from './components/ds/SvdLayersLab.vue'
 import MetricThresholdLab from './components/ds/MetricThresholdLab.vue'
+import PixelProbeLab from './components/ds/PixelProbeLab.vue'
+import GeometryTransformLab from './components/ds/GeometryTransformLab.vue'
+import SegmentationMeasureLab from './components/ds/SegmentationMeasureLab.vue'
 import MlCourseMap from './components/ml/MlCourseMap.vue'
 import ErmSamplingLab from './components/ml/ErmSamplingLab.vue'
 import ForestCorrelationRack from './components/ml/ForestCorrelationRack.vue'
@@ -327,6 +330,9 @@ export default {
     app.component('LossComparisonLab', LossComparisonLab)
     app.component('LogisticCurveLab', LogisticCurveLab)
     app.component('MetricThresholdLab', MetricThresholdLab)
+    app.component('PixelProbeLab', PixelProbeLab)
+    app.component('GeometryTransformLab', GeometryTransformLab)
+    app.component('SegmentationMeasureLab', SegmentationMeasureLab)
     app.component('MlCourseMap', MlCourseMap)
     app.component('ErmSamplingLab', ErmSamplingLab)
     app.component('ForestCorrelationRackLab', ForestCorrelationRack)

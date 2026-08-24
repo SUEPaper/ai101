@@ -9,7 +9,7 @@ outline: [2, 3]
 
 > **状态：已开放。** 全部 32 章正文、64 个专用交互实验、8 次综合作业、结课项目与推荐论文导读均已完成，并通过内容、代码、构建、内部链接及桌面/移动端验收。
 
-课程接续本站机器学习课，不重复讲解 MLP、反向传播、CNN 基础、RNN 时间展开和自注意力基础推导。视觉部分直接从 AlexNet、VGG、ResNet 开始，进入目标检测、语义分割、ViT 与 Swin Transformer；语言部分从文本、分词和词向量建立新数据接口，再系统进入现代大语言模型。GPU、CUDA 生态、AI 算子、分布式训练、vLLM 和 SGLang 是正式课程内容，不作为附录处理。
+课程接续本站[数据科学图像桥接模块](./data-science/v1-digital-images.md)与机器学习课，不重复讲解图像数组和 OpenCV 基础、MLP、反向传播、CNN 基础、RNN 时间展开和自注意力基础推导。视觉部分直接从 AlexNet、VGG、ResNet 开始，进入目标检测、语义分割、ViT 与 Swin Transformer；语言部分从文本、分词和词向量建立新数据接口，再系统进入现代大语言模型。GPU、CUDA 生态、AI 算子、分布式训练、vLLM 和 SGLang 是正式课程内容，不作为附录处理。
 
 <figure class="dl-figure">
   <img src="/images/deep-learning/training-signal-lab.png" alt="抽象训练系统剖面：前向信号穿过多层网络，反向梯度沿相反方向返回，优化器状态、学习率、混合精度和诊断仪表分布在信号链周围">

@@ -197,7 +197,7 @@ print(comparison.round(3))
 
 </details>
 
-## 10. 课程主线收束
+## 10. 无监督学习模块收束
 
 从第 01 讲开始，我们把问题变成数据；检查、清洗和表达数据；用抽样与概率描述不确定性；训练、评价并约束模型；最后在无标签数据中寻找候选结构。
 
@@ -209,11 +209,11 @@ print(comparison.round(3))
   <div><b>DECISION</b><span>沟通、监控、纠错</span><small>指标、公平、反馈</small></div>
 </div>
 
-真正的结课不是会调用一个算法，而是能说明：数据从哪里来、结论依赖什么、哪里可能失败、谁会受到影响。
+完成 26 讲主线后，学习者已经能说明：数据从哪里来、结论依赖什么、哪里可能失败、谁会受到影响。接下来的图像数据桥接模块把同一套审计方法应用到非表格数据，并为机器学习 CNN 与深度学习计算机视觉建立输入接口。
 
 ## 参考资料
 
 - Berkeley Data 100 Summer 2025，Lecture 26：K-means、层次聚类、Dendrogram、linkage 与 Silhouette 的知识边界。
 - 本页站点运营画像案例、数据、文字、图解、代码、问题和实验均为本课程原创。
 
-<DsLessonProgress lesson-id="26" next-label="七次模块综合作业" next-href="/courses/data-science/assignments" />
+<DsLessonProgress lesson-id="26" next-label="V1：数字图像与数组合同" next-href="/courses/data-science/v1-digital-images" />
