@@ -6,6 +6,7 @@ const route = useRoute()
 const mobileOpen = ref(false)
 
 const mainCourses = [
+  { title: '数值计算方法训练', href: '/courses/numerical-computing' },
   { title: '数据科学', href: '/courses/data-science' },
   { title: '机器学习', href: '/courses/machine-learning' },
   { title: '深度学习与大模型', href: '/courses/deep-learning' },
@@ -52,7 +53,7 @@ watch(
         </span>
       </a>
 
-      <div class="hidden flex-1 items-stretch justify-end lg:flex">
+      <div class="hidden flex-1 items-stretch justify-end xl:flex">
         <div class="flex items-stretch gap-1">
           <a
             v-for="course in mainCourses"
@@ -73,7 +74,7 @@ watch(
       </div>
 
       <button
-        class="ml-auto inline-flex min-h-11 items-center gap-3 rounded-lg border border-[#dbe5df] bg-white px-4 text-sm font-bold text-[#17201f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2f7c7a] lg:hidden"
+        class="ml-auto inline-flex min-h-11 items-center gap-3 rounded-lg border border-[#dbe5df] bg-white px-4 text-sm font-bold text-[#17201f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#2f7c7a] xl:hidden"
         type="button"
         :aria-expanded="mobileOpen"
         aria-controls="course-mobile-nav"
@@ -87,7 +88,7 @@ watch(
       </button>
     </nav>
 
-    <div v-if="mobileOpen" id="course-mobile-nav" class="border-t border-[#dbe5df] bg-[#f7f9f5] px-4 pb-4 lg:hidden">
+    <div v-if="mobileOpen" id="course-mobile-nav" class="border-t border-[#dbe5df] bg-[#f7f9f5] px-4 pb-4 xl:hidden">
       <div class="mx-auto grid w-full max-w-[1180px] gap-2 pt-3">
         <a
           v-for="course in allCourses"

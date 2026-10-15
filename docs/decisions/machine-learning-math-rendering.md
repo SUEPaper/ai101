@@ -19,3 +19,11 @@
 - 站点构建时增加数学解析成本，但不在每个页面加载 Python 运行时。
 - 公式较长时必须使用多行推导并在公式前后解释符号，不把可读性问题交给横向滚动解决。
 - 新增依赖只用于构建教材公式，不改变课程数据、部署方式或后端边界。
+
+## 2026-10-15 依赖升级复核
+
+本次更新沿用已有发布渠道：Tailwind CSS 与 `@tailwindcss/vite` 使用最新正式版 `4.3.3`，VitePress 从 `2.0.0-alpha.18` 更新到 `next` 渠道的 `2.0.0-alpha.20`，继续固定精确版本。
+
+`markdown-it-mathjax3` 的最新正式版为 `5.2.0`，但 VitePress `2.0.0-alpha.20` 的 `peerDependencies` 仍要求 `markdown-it-mathjax3@^4`，因此保留最高兼容版本 `4.3.2`。不使用强制安装或依赖覆盖来跨越这个兼容边界；待 VitePress 声明支持新版插件后再升级。
+
+版本标签与兼容范围已通过 npm 官方仓库查询；VitePress 的限制也可在[官方版本清单](https://github.com/vuejs/vitepress/blob/v2.0.0-alpha.20/package.json) 中核对。

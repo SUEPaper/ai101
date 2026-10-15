@@ -4,6 +4,22 @@ import { withBase } from 'vitepress'
 const courses = [
   {
     number: '01',
+    phase: '编程与数值计算',
+    title: '数值计算方法训练',
+    status: '已开放',
+    available: true,
+    href: '/courses/numerical-computing',
+    routeDescription: '用 Python 实现计算方法，练习建模、结果分析与报告表达。',
+    summary: '从 Python、NumPy 与 Matplotlib 入门，完成数值稳定性、求根、插值拟合、微积分、线性方程组、微分方程、特征值与数学建模实验。',
+    highlights: ['预学习 + 8 个实验', 'Python 与科学计算', 'LaTeX 与 Git'],
+    outcome: '能够把计算方法写成程序，分析数值结果，并完成规范的实验报告。',
+    action: '进入数值计算方法训练',
+    accentClass: 'text-[#466b8d]',
+    borderClass: 'border-l-[#4d6f91]',
+    dotClass: 'bg-[#4d6f91]'
+  },
+  {
+    number: '02',
     phase: '数据与证据',
     title: '数据科学',
     status: '已开放',
@@ -19,7 +35,7 @@ const courses = [
     dotClass: 'bg-[#2f7c7a]'
   },
   {
-    number: '02',
+    number: '03',
     phase: '建模与推导',
     title: '机器学习',
     status: '已开放',
@@ -35,7 +51,7 @@ const courses = [
     dotClass: 'bg-[#b0792f]'
   },
   {
-    number: '03',
+    number: '04',
     phase: '表示、生成与规模化',
     title: '深度学习与大模型',
     status: '已开放',
@@ -51,7 +67,7 @@ const courses = [
     dotClass: 'bg-[#9b4d42]'
   },
   {
-    number: '04',
+    number: '05',
     phase: '工程与交付',
     title: '人工智能实践课',
     status: '规划中',
@@ -85,22 +101,22 @@ const plannedCourses = courses.filter((course) => !course.available)
       <div class="relative mx-auto grid w-full max-w-[1180px] gap-12 px-5 py-14 sm:px-6 md:py-20 lg:grid-cols-[0.9fr_1.1fr] lg:items-center lg:gap-16 lg:py-24">
         <div>
           <p class="mb-5 inline-flex rounded-full border border-[#cbd9d2] bg-white/80 px-3 py-1 text-xs font-bold text-[#2f7c7a]">
-            3 门已开放 · 1 门规划中
+            4 门已开放 · 1 门规划中
           </p>
           <h1 id="ai-home-title" class="m-0 max-w-[650px] text-[44px] font-[840] leading-[1.04] tracking-[-0.035em] text-[#0d1514] md:text-[64px]">
-            从可信数据，<br>
+            从编程与数值计算，<br>
             走到可交付的人工智能系统
           </h1>
           <p class="mt-6 max-w-[610px] text-base leading-[1.85] text-[#52625e] md:text-lg">
-            四门课组成一条连续能力链：先建立数据判断，再理解模型为什么成立；随后进入深度学习与大模型，最终在人工智能实践课完成工程交付。
+            五门课串起编程、计算、数据与模型：通过数值计算方法训练打好实践基础，在数据科学中建立数据判断，在机器学习中理解模型；随后进入深度学习与大模型，最终在人工智能实践课完成工程交付。
           </p>
 
           <div class="mt-8 flex flex-wrap gap-3" aria-label="已开放课程入口">
             <a
               class="inline-flex min-h-11 w-full items-center justify-center rounded-lg bg-[#143b37] px-5 text-[15px] font-bold text-white no-underline transition duration-200 hover:-translate-y-0.5 hover:bg-[#1d504a] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#2f7c7a] motion-reduce:transform-none motion-reduce:transition-none sm:w-auto"
-              :href="withBase('/courses/data-science')"
+              :href="withBase('/courses/numerical-computing')"
             >
-              开始数据科学
+              开始数值计算方法训练
             </a>
             <a
               class="inline-flex min-h-11 w-full items-center justify-center rounded-lg border border-[#b9c9c1] bg-white/90 px-5 text-[15px] font-bold text-[#17201f] no-underline transition duration-200 hover:-translate-y-0.5 hover:border-[#7f9d90] hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#2f7c7a] motion-reduce:transform-none motion-reduce:transition-none sm:w-auto"
@@ -165,10 +181,10 @@ const plannedCourses = courses.filter((course) => !course.available)
         <div class="max-w-[760px]">
           <p class="m-0 font-mono text-[11px] font-bold tracking-[0.16em] text-[#2f7c7a]">OPEN FOR STUDY</p>
           <h2 id="open-courses-title" class="mb-0 mt-3 text-[32px] font-[830] leading-[1.12] tracking-[-0.02em] text-[#0d1514] md:text-[44px]">现在可以完整学习</h2>
-          <p class="mb-0 mt-4 text-base leading-[1.8] text-[#5b6864]">三套课程已完成正文、实验、练习和项目建设，当前进入试学反馈驱动的维护阶段。</p>
+          <p class="mb-0 mt-4 text-base leading-[1.8] text-[#5b6864]">数值计算方法训练已开放原有教程与实验；数据科学、机器学习、深度学习与大模型提供完整的正文、交互实验、作业和项目。可按基础与学习目标选择起点。</p>
         </div>
 
-        <div class="mt-10 grid gap-5 lg:grid-cols-3">
+        <div class="mt-10 grid gap-5 md:grid-cols-2">
           <a
             v-for="course in openCourses"
             :key="course.href"
@@ -207,7 +223,7 @@ const plannedCourses = courses.filter((course) => !course.available)
             <h2 id="planned-courses-title" class="mb-0 mt-3 text-[32px] font-[830] leading-[1.12] tracking-[-0.02em] text-[#0d1514] md:text-[44px]">后续课程规划</h2>
           </div>
           <p class="m-0 max-w-[700px] text-base leading-[1.8] text-[#5b6864] lg:justify-self-end">
-            数据科学、机器学习、深度学习与大模型均已开放；人工智能实践课仍处于规划阶段。这里继续区分规划和已开放，不把课程目录误标成完整课程。
+            数值计算方法训练、数据科学、机器学习、深度学习与大模型均已开放；人工智能实践课仍处于规划阶段，将衔接前序课程中的计算、分析与建模能力。
           </p>
         </div>
 

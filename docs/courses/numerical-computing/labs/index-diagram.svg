@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="284" height="1620" viewBox="0 0 284 1620" role="img" aria-labelledby="title"><title id="title">Python 预学习路线</title>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10" fill="#6a7d77"/></marker></defs>
+<g font-family="sans-serif" font-size="13" text-anchor="middle">
+<path d="M142.0,62 L142.0,118" fill="none" stroke="#6a7d77" marker-end="url(#arrow)"/>
+<path d="M142.0,162 L142.0,218" fill="none" stroke="#6a7d77" marker-end="url(#arrow)"/>
+<path d="M142.0,262 L142.0,318" fill="none" stroke="#6a7d77" marker-end="url(#arrow)"/>
+<path d="M142.0,362 L142.0,418" fill="none" stroke="#6a7d77" marker-end="url(#arrow)"/>
+<path d="M142.0,462 L142.0,518" fill="none" stroke="#6a7d77" marker-end="url(#arrow)"/>
+<path d="M142.0,562 L142.0,618" fill="none" stroke="#6a7d77" marker-end="url(#arrow)"/>
+<path d="M142.0,662 L142.0,718" fill="none" stroke="#6a7d77" marker-end="url(#arrow)"/>
+<path d="M142.0,762 L142.0,818" fill="none" stroke="#6a7d77" marker-end="url(#arrow)"/>
+<path d="M142.0,862 L142.0,918" fill="none" stroke="#6a7d77" marker-end="url(#arrow)"/>
+<path d="M142.0,962 L142.0,1018" fill="none" stroke="#6a7d77" marker-end="url(#arrow)"/>
+<path d="M142.0,1062 L142.0,1118" fill="none" stroke="#6a7d77" marker-end="url(#arrow)"/>
+<path d="M142.0,1162 L142.0,1218" fill="none" stroke="#6a7d77" marker-end="url(#arrow)"/>
+<path d="M142.0,1262 L142.0,1318" fill="none" stroke="#6a7d77" marker-end="url(#arrow)"/>
+<path d="M142.0,1362 L142.0,1418" fill="none" stroke="#6a7d77" marker-end="url(#arrow)"/>
+<path d="M142.0,1462 L142.0,1518" fill="none" stroke="#6a7d77" marker-end="url(#arrow)"/>
+<rect x="22.0" y="18" width="240" height="44" rx="7" fill="#edf7f2" stroke="#9fb5ab"/><text x="142.0" y="44" fill="#17201f">Python安装</text>
+<rect x="22.0" y="118" width="240" height="44" rx="7" fill="#edf7f2" stroke="#9fb5ab"/><text x="142.0" y="144" fill="#17201f">Python包管理</text>
+<rect x="22.0" y="218" width="240" height="44" rx="7" fill="#edf7f2" stroke="#9fb5ab"/><text x="142.0" y="244" fill="#17201f">基础数据类型和变量</text>
+<rect x="22.0" y="318" width="240" height="44" rx="7" fill="#edf7f2" stroke="#9fb5ab"/><text x="142.0" y="344" fill="#17201f">语句</text>
+<rect x="22.0" y="418" width="240" height="44" rx="7" fill="#edf7f2" stroke="#9fb5ab"/><text x="142.0" y="444" fill="#17201f">控制语句</text>
+<rect x="22.0" y="518" width="240" height="44" rx="7" fill="#edf7f2" stroke="#9fb5ab"/><text x="142.0" y="544" fill="#17201f">循环语句</text>
+<rect x="22.0" y="618" width="240" height="44" rx="7" fill="#edf7f2" stroke="#9fb5ab"/><text x="142.0" y="644" fill="#17201f">函数</text>
+<rect x="22.0" y="718" width="240" height="44" rx="7" fill="#edf7f2" stroke="#9fb5ab"/><text x="142.0" y="744" fill="#17201f">Lambda</text>
+<rect x="22.0" y="818" width="240" height="44" rx="7" fill="#edf7f2" stroke="#9fb5ab"/><text x="142.0" y="844" fill="#17201f">VS Code Debug Python</text>
+<rect x="22.0" y="918" width="240" height="44" rx="7" fill="#edf7f2" stroke="#9fb5ab"/><text x="142.0" y="944" fill="#17201f">数据结构: 列表</text>
+<rect x="22.0" y="1018" width="240" height="44" rx="7" fill="#edf7f2" stroke="#9fb5ab"/><text x="142.0" y="1044" fill="#17201f">数据结构: 元组</text>
+<rect x="22.0" y="1118" width="240" height="44" rx="7" fill="#edf7f2" stroke="#9fb5ab"/><text x="142.0" y="1144" fill="#17201f">数据结构: 字典</text>
+<rect x="22.0" y="1218" width="240" height="44" rx="7" fill="#edf7f2" stroke="#9fb5ab"/><text x="142.0" y="1244" fill="#17201f">NumPy: 向量</text>
+<rect x="22.0" y="1318" width="240" height="44" rx="7" fill="#edf7f2" stroke="#9fb5ab"/><text x="142.0" y="1344" fill="#17201f">NumPy: 矩阵</text>
+<rect x="22.0" y="1418" width="240" height="44" rx="7" fill="#edf7f2" stroke="#9fb5ab"/><text x="142.0" y="1444" fill="#17201f">Matplotlib: 画图</text>
+<rect x="22.0" y="1518" width="240" height="44" rx="7" fill="#edf7f2" stroke="#9fb5ab"/><text x="142.0" y="1544" fill="#17201f">课程实验</text>
+</g></svg>

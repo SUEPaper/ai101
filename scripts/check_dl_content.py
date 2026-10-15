@@ -241,7 +241,7 @@ def main() -> None:
 
     if "title: '深度学习与大模型',\n    status: '已开放',\n    available: true" not in home_component:
         errors.append("首页深度学习与大模型课程卡未标为已开放")
-    if "3 门已开放 · 1 门规划中" not in home_component:
+    if "4 门已开放 · 1 门规划中" not in home_component:
         errors.append("首页课程总状态未同步")
 
     for path, text in (

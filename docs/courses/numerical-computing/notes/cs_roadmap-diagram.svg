@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="884" height="1320" viewBox="0 0 884 1320" role="img" aria-labelledby="title"><title id="title">计算机科学自学路径图</title>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0L10 5L0 10" fill="#6a7d77"/></marker></defs>
+<g font-family="sans-serif" font-size="13" text-anchor="middle">
+<path d="M442.0,62 L442.0,118" fill="none" stroke="#6a7d77" marker-end="url(#arrow)"/>
+<path d="M442.0,162 L442.0,218" fill="none" stroke="#6a7d77" marker-end="url(#arrow)"/>
+<path d="M442.0,262 L442.0,318" fill="none" stroke="#6a7d77" marker-end="url(#arrow)"/>
+<path d="M442.0,362 L442.0,418" fill="none" stroke="#6a7d77" marker-end="url(#arrow)"/>
+<path d="M442.0,462 L442.0,518" fill="none" stroke="#6a7d77" marker-end="url(#arrow)"/>
+<path d="M442.0,562 L442.0,618" fill="none" stroke="#6a7d77" marker-end="url(#arrow)"/>
+<path d="M442.0,662 L442.0,718" fill="none" stroke="#6a7d77" marker-end="url(#arrow)"/>
+<path d="M442.0,762 L227.0,818" fill="none" stroke="#6a7d77" marker-end="url(#arrow)"/>
+<path d="M442.0,762 L657.0,818" fill="none" stroke="#6a7d77" marker-end="url(#arrow)"/>
+<path d="M227.0,862 L227.0,918" fill="none" stroke="#6a7d77" marker-end="url(#arrow)"/>
+<path d="M657.0,862 L227.0,918" fill="none" stroke="#6a7d77" marker-end="url(#arrow)"/>
+<path d="M227.0,962 L227.0,1018" fill="none" stroke="#6a7d77" marker-end="url(#arrow)"/>
+<path d="M227.0,962 L657.0,1018" fill="none" stroke="#6a7d77" marker-end="url(#arrow)"/>
+<path d="M227.0,1062 L442.0,1118" fill="none" stroke="#6a7d77" marker-end="url(#arrow)"/>
+<path d="M442.0,1162 L442.0,1218" fill="none" stroke="#6a7d77" marker-end="url(#arrow)"/>
+<path d="M657.0,1062 L442.0,1218" fill="none" stroke="#6a7d77" marker-end="url(#arrow)"/>
+<path d="M657.0,862 L657.0,918" fill="none" stroke="#6a7d77" marker-end="url(#arrow)"/>
+<rect x="237.0" y="18" width="410" height="44" rx="7" fill="#edf7f2" stroke="#9fb5ab"/><text x="442.0" y="44" fill="#17201f">MIT CS50: Introduction to Computer Science</text>
+<rect x="237.0" y="118" width="410" height="44" rx="7" fill="#edf7f2" stroke="#9fb5ab"/><text x="442.0" y="144.0" fill="#17201f"><tspan x="442.0" y="136.0">Berkeley CS61A: Structure and Interpretation of</tspan><tspan x="442.0" y="152.0">Computer Programs</tspan></text>
+<rect x="237.0" y="218" width="410" height="44" rx="7" fill="#edf7f2" stroke="#9fb5ab"/><text x="442.0" y="244" fill="#17201f">MIT The Missing Semester of Your CS Education</text>
+<rect x="237.0" y="318" width="410" height="44" rx="7" fill="#edf7f2" stroke="#9fb5ab"/><text x="442.0" y="344" fill="#17201f">git小任务</text>
+<rect x="237.0" y="418" width="410" height="44" rx="7" fill="#edf7f2" stroke="#9fb5ab"/><text x="442.0" y="444" fill="#17201f">Stanford CS106L: C++ Programming</text>
+<rect x="237.0" y="518" width="410" height="44" rx="7" fill="#edf7f2" stroke="#9fb5ab"/><text x="442.0" y="544" fill="#17201f">Linux C编程一站式学习</text>
+<rect x="237.0" y="618" width="410" height="44" rx="7" fill="#edf7f2" stroke="#9fb5ab"/><text x="442.0" y="644" fill="#17201f">CMU 15-213 ICS</text>
+<rect x="237.0" y="718" width="410" height="44" rx="7" fill="#edf7f2" stroke="#9fb5ab"/><text x="442.0" y="744" fill="#17201f">NJU ICS PA</text>
+<rect x="22.0" y="818" width="410" height="44" rx="7" fill="#edf7f2" stroke="#9fb5ab"/><text x="227.0" y="844" fill="#17201f">Stanford CS106B: Programming Abstractions</text>
+<rect x="452.0" y="818" width="410" height="44" rx="7" fill="#edf7f2" stroke="#9fb5ab"/><text x="657.0" y="844" fill="#17201f">Berkeley CS61C: Great Ideas in Computer Architecture</text>
+<rect x="22.0" y="918" width="410" height="44" rx="7" fill="#edf7f2" stroke="#9fb5ab"/><text x="227.0" y="944" fill="#17201f">NJU JYY的操作系统</text>
+<rect x="22.0" y="1018" width="410" height="44" rx="7" fill="#edf7f2" stroke="#9fb5ab"/><text x="227.0" y="1044" fill="#17201f">Stanford CS143: Compilers</text>
+<rect x="452.0" y="1018" width="410" height="44" rx="7" fill="#edf7f2" stroke="#9fb5ab"/><text x="657.0" y="1044" fill="#17201f">Stanford CS144: Introduction to Computer Networking</text>
+<rect x="237.0" y="1118" width="410" height="44" rx="7" fill="#edf7f2" stroke="#9fb5ab"/><text x="442.0" y="1144" fill="#17201f">CMU 15-445: Intro to Database System</text>
+<rect x="237.0" y="1218" width="410" height="44" rx="7" fill="#edf7f2" stroke="#9fb5ab"/><text x="442.0" y="1244" fill="#17201f">MIT 6.824: Distributed Systems</text>
+<rect x="452.0" y="918" width="410" height="44" rx="7" fill="#edf7f2" stroke="#9fb5ab"/><text x="657.0" y="944" fill="#17201f">国科大一生一芯项目</text>
+</g></svg>

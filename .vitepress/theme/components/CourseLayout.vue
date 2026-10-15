@@ -5,6 +5,7 @@ import CourseNav from './CourseNav.vue'
 import DlCourseShell from './dl/DlCourseShell.vue'
 import DsCourseShell from './ds/DsCourseShell.vue'
 import MlCourseShell from './ml/MlCourseShell.vue'
+import MathCourseShell from './MathCourseShell.vue'
 
 const { frontmatter, page } = useData()
 
@@ -55,6 +56,9 @@ watch(() => page.value.relativePath, repairMathJaxViewBox)
       <DlCourseShell v-else-if="frontmatter.course === 'deep-learning'">
         <Content />
       </DlCourseShell>
+      <MathCourseShell v-else-if="frontmatter.course === 'numerical-computing'">
+        <Content />
+      </MathCourseShell>
       <article v-else class="vp-doc mx-auto w-full max-w-[860px] px-5 py-12 sm:px-6 md:py-16">
         <Content />
       </article>
