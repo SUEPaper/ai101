@@ -6,7 +6,7 @@ const route = useRoute()
 const mobileOpen = ref(false)
 
 const mainCourses = [
-  { title: '数值计算方法训练', href: '/courses/numerical-computing' },
+  { title: '数值分析', href: '/courses/numerical-computing' },
   { title: '数据科学', href: '/courses/data-science' },
   { title: '机器学习', href: '/courses/machine-learning' },
   { title: '深度学习与大模型', href: '/courses/deep-learning' },

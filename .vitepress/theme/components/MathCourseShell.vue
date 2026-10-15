@@ -17,8 +17,8 @@ function isActive(href: string) {
 
 <template>
   <div class="math-shell">
-    <aside class="math-sidebar" aria-label="数值计算方法训练课程目录">
-      <a class="math-home" :href="withBase('/courses/numerical-computing')">数值计算方法训练</a>
+    <aside class="math-sidebar" aria-label="数值分析课程目录">
+      <a class="math-home" :href="withBase('/courses/numerical-computing')">数值分析</a>
       <nav>
         <details v-for="module in mathModules" :key="module.title" :open="module.lessons.some((lesson) => isActive(lesson.href))">
           <summary>{{ module.title }}</summary>

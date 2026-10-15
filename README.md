@@ -2,7 +2,7 @@
 
 AI101 是一个基于 VitePress 的人工智能系列课程静态网站，提供五门课程入口：
 
-- 数值计算方法训练
+- 数值分析
 - 数据科学
 - 机器学习
 - 深度学习与大模型
@@ -14,7 +14,7 @@ AI101 是一个基于 VitePress 的人工智能系列课程静态网站，提供
 
 | 课程 | 当前状态 |
 |---|---|
-| 数值计算方法训练 | 已开放：85 篇文档，包含预学习、8 个数值实验及 Python、LaTeX、Git 和学习资料 |
+| 数值分析 | 已开放：系统学习计算方法并结合算法实现与数值实验，包含 85 篇文档、8 个实验及配套工具教程 |
 | 数据科学 | 已开放 |
 | 机器学习 | 已开放 |
 | 深度学习与大模型 | 已开放：32 章、64 个专用交互、8 次综合作业和 1 个结课项目 |
@@ -152,7 +152,7 @@ Settings -> Pages -> Build and deployment -> Source -> GitHub Actions
 - 首页视觉和课程卡片在 `.vitepress/theme/components/AiHome.vue` 中维护。
 - 顶部导航在 `.vitepress/theme/components/CourseNav.vue` 中维护。
 - 五门课程页面在 `docs/courses/` 中维护。
-- 数值计算方法训练沿用 Math201 的正文与资源，内容位于 `docs/courses/numerical-computing/`，课程目录在 `.vitepress/theme/data/mathCourse.ts` 中维护。
+- 数值分析沿用 Math201 的正文与资源，内容位于 `docs/courses/numerical-computing/`，课程目录在 `.vitepress/theme/data/mathCourse.ts` 中维护。
 - 进度、待办和验证记录维护在 `ROADMAP.md` 中。
 
 所有仓库文档默认使用中文。代码符号、命令、文件名和第三方产品名可保留英文。

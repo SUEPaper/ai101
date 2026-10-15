@@ -4,16 +4,16 @@ import { withBase } from 'vitepress'
 const courses = [
   {
     number: '01',
-    phase: '编程与数值计算',
-    title: '数值计算方法训练',
+    phase: '数值方法与科学计算',
+    title: '数值分析',
     status: '已开放',
     available: true,
     href: '/courses/numerical-computing',
-    routeDescription: '用 Python 实现计算方法，练习建模、结果分析与报告表达。',
-    summary: '从 Python、NumPy 与 Matplotlib 入门，完成数值稳定性、求根、插值拟合、微积分、线性方程组、微分方程、特征值与数学建模实验。',
-    highlights: ['预学习 + 8 个实验', 'Python 与科学计算', 'LaTeX 与 Git'],
-    outcome: '能够把计算方法写成程序，分析数值结果，并完成规范的实验报告。',
-    action: '进入数值计算方法训练',
+    routeDescription: '系统学习计算方法、误差与稳定性，通过算法实现和数值实验检验理解。',
+    summary: '围绕误差与稳定性、方程求根、插值与拟合、数值微积分、线性方程组、常微分方程和特征值，串联方法原理、Python 算法实现与数学建模实践。',
+    highlights: ['方法原理与算法实现', '8 个数值实验', 'Python、LaTeX 与 Git'],
+    outcome: '理解计算方法的适用条件，实现数值算法，分析结果的可靠性，并完成建模与实验报告。',
+    action: '进入数值分析课程',
     accentClass: 'text-[#466b8d]',
     borderClass: 'border-l-[#4d6f91]',
     dotClass: 'bg-[#4d6f91]'
@@ -104,11 +104,11 @@ const plannedCourses = courses.filter((course) => !course.available)
             4 门已开放 · 1 门规划中
           </p>
           <h1 id="ai-home-title" class="m-0 max-w-[650px] text-[44px] font-[840] leading-[1.04] tracking-[-0.035em] text-[#0d1514] md:text-[64px]">
-            从编程与数值计算，<br>
+            从计算方法出发，<br>
             走到可交付的人工智能系统
           </h1>
           <p class="mt-6 max-w-[610px] text-base leading-[1.85] text-[#52625e] md:text-lg">
-            五门课串起编程、计算、数据与模型：通过数值计算方法训练打好实践基础，在数据科学中建立数据判断，在机器学习中理解模型；随后进入深度学习与大模型，最终在人工智能实践课完成工程交付。
+            五门课贯通系统知识与实践：数值分析连接计算方法、算法实现与数值实验，数据科学建立数据判断，机器学习展开建模与推导，深度学习与大模型延伸到现代架构和系统，最终在人工智能实践课完成工程交付。可按已有基础选择学习起点。
           </p>
 
           <div class="mt-8 flex flex-wrap gap-3" aria-label="已开放课程入口">
@@ -116,7 +116,7 @@ const plannedCourses = courses.filter((course) => !course.available)
               class="inline-flex min-h-11 w-full items-center justify-center rounded-lg bg-[#143b37] px-5 text-[15px] font-bold text-white no-underline transition duration-200 hover:-translate-y-0.5 hover:bg-[#1d504a] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#2f7c7a] motion-reduce:transform-none motion-reduce:transition-none sm:w-auto"
               :href="withBase('/courses/numerical-computing')"
             >
-              开始数值计算方法训练
+              开始数值分析
             </a>
             <a
               class="inline-flex min-h-11 w-full items-center justify-center rounded-lg border border-[#b9c9c1] bg-white/90 px-5 text-[15px] font-bold text-[#17201f] no-underline transition duration-200 hover:-translate-y-0.5 hover:border-[#7f9d90] hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#2f7c7a] motion-reduce:transform-none motion-reduce:transition-none sm:w-auto"
@@ -181,7 +181,7 @@ const plannedCourses = courses.filter((course) => !course.available)
         <div class="max-w-[760px]">
           <p class="m-0 font-mono text-[11px] font-bold tracking-[0.16em] text-[#2f7c7a]">OPEN FOR STUDY</p>
           <h2 id="open-courses-title" class="mb-0 mt-3 text-[32px] font-[830] leading-[1.12] tracking-[-0.02em] text-[#0d1514] md:text-[44px]">现在可以完整学习</h2>
-          <p class="mb-0 mt-4 text-base leading-[1.8] text-[#5b6864]">数值计算方法训练已开放原有教程与实验；数据科学、机器学习、深度学习与大模型提供完整的正文、交互实验、作业和项目。可按基础与学习目标选择起点。</p>
+          <p class="mb-0 mt-4 text-base leading-[1.8] text-[#5b6864]">四门已开放课程覆盖数值方法、数据分析、机器学习与现代深度学习，通过讲解、计算实验和作业连接知识与实践。可按基础与学习目标选择起点。</p>
         </div>
 
         <div class="mt-10 grid gap-5 md:grid-cols-2">
@@ -223,7 +223,7 @@ const plannedCourses = courses.filter((course) => !course.available)
             <h2 id="planned-courses-title" class="mb-0 mt-3 text-[32px] font-[830] leading-[1.12] tracking-[-0.02em] text-[#0d1514] md:text-[44px]">后续课程规划</h2>
           </div>
           <p class="m-0 max-w-[700px] text-base leading-[1.8] text-[#5b6864] lg:justify-self-end">
-            数值计算方法训练、数据科学、机器学习、深度学习与大模型均已开放；人工智能实践课仍处于规划阶段，将衔接前序课程中的计算、分析与建模能力。
+            数值分析、数据科学、机器学习、深度学习与大模型均已开放；人工智能实践课仍处于规划阶段，将衔接前序课程中的计算、分析与建模能力。
           </p>
         </div>
 
